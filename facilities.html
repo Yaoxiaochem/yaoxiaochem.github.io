@@ -1,44 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Company Strength | Hebei Yaoxiao New Materials Technology Co., Ltd.
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#0b3c74;
+padding:20px 0;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.banner{
+background:#f5f7fb;
+text-align:center;
+padding:70px 20px;
+}
+
+.banner h1{
+font-size:42px;
+color:#0b3c74;
+margin-bottom:15px;
+}
+
+.banner p{
+font-size:18px;
+}
+
+.section{
+padding:60px 0;
+}
+
+.section-title{
+text-align:center;
+color:#0b3c74;
+margin-bottom:30px;
+font-size:32px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
+}
+
+.description{
+text-align:center;
+max-width:900px;
+margin:0 auto 30px;
+}
+
+footer{
+background:#0b3c74;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.banner h1{
+font-size:32px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+YAOXIAO CHEM
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="product-catalog.html">Catalog</a></li>
+<li><a href="top-products.html">Top Products</a></li>
+<li><a href="facilities.html">Company Strength</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
 <section class="banner">
+
 <h1>Company Strength</h1>
-<p>Office · Factory · Laboratory · Warehouse · Logistics</p>
+
+<p>
+Professional Team · Quality Control · Warehousing · Global Logistics
+</p>
+
 </section>
 
 <section class="section">
+
 <div class="container">
 
-<div class="grid">
+<h2 class="section-title">Office & Team</h2>
 
-<div class="card">
-<img src="images/office.jpg" alt="Yaoxiao Office">
-<h3>Office</h3>
-<p>Professional sales and customer service team.</p>
-</div>
+<p class="description">
+Professional sales and customer support team providing fast response and reliable service.
+</p>
 
-<div class="card">
-<img src="images/factory.jpg" alt="Chemical Factory">
-<h3>Factory</h3>
-<p>Stable production and supply capability.</p>
-</div>
-
-<div class="card">
-<img src="images/laboratory.jpg" alt="Laboratory">
-<h3>Laboratory</h3>
-<p>Quality control and product testing support.</p>
-</div>
-
-<div class="card">
-<img src="images/warehouse.jpg" alt="Warehouse">
-<h3>Warehouse</h3>
-<p>Safe storage and inventory management.</p>
-</div>
-
-<div class="card">
-<img src="images/logistics.jpg" alt="Chemical Logistics">
-<h3>Logistics & Delivery</h3>
-<p>Export packaging and international shipment support.</p>
+<div class="gallery">
+<img src="images/office1.jpg">
+<img src="images/office2.jpg">
+<img src="images/office3.jpg">
+<img src="images/office4.jpg">
 </div>
 
 </div>
 
-</div>
 </section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Production Partners</h2>
+
+<p class="description">
+Stable manufacturing resources and long-term production cooperation.
+</p>
+
+<div class="gallery">
+<img src="images/factory1.jpg">
+<img src="images/factory2.jpg">
+<img src="images/factory3.jpg">
+<img src="images/factory4.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Quality Control Laboratory</h2>
+
+<p class="description">
+Strict testing procedures ensure product consistency and quality.
+</p>
+
+<div class="gallery">
+<img src="images/lab1.jpg">
+<img src="images/lab2.jpg">
+<img src="images/lab3.jpg">
+<img src="images/lab4.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Warehouse & Packaging</h2>
+
+<p class="description">
+Efficient inventory management and export packaging support.
+</p>
+
+<div class="gallery">
+<img src="images/warehouse1.jpg">
+<img src="images/warehouse2.jpg">
+<img src="images/warehouse3.jpg">
+<img src="images/warehouse4.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Global Logistics</h2>
+
+<p class="description">
+Sea freight, air freight, express delivery and container transportation.
+</p>
+
+<div class="gallery">
+<img src="images/logistics1.jpg">
+<img src="images/logistics2.jpg">
+<img src="images/logistics3.jpg">
+<img src="images/logistics4.jpg">
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Hebei Yaoxiao New Materials Technology Co., Ltd.
+</p>
+
+<p>
+Global Specialty Chemicals Supplier
+</p>
+
+</footer>
+
+</body>
+</html>

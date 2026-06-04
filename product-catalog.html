@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Catalog | Hebei Yaoxiao Chemicals</title>
+
+<style>
+body{font-family:Arial;margin:0;color:#333;line-height:1.6;}
+.container{width:90%;max-width:1200px;margin:auto;}
+header{background:#0b3c74;color:white;padding:20px 0;}
+nav{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:26px;font-weight:bold;}
+nav ul{display:flex;list-style:none;gap:20px;}
+nav a{color:white;text-decoration:none;}
+.banner{background:#f4f7fb;text-align:center;padding:60px 20px;}
+.banner h1{color:#0b3c74;font-size:40px;}
+.section{padding:50px 0;}
+.search-box{margin-bottom:25px;}
+.search-box input{width:100%;padding:14px;border:1px solid #ccc;border-radius:6px;font-size:16px;}
+table{width:100%;border-collapse:collapse;}
+th,td{border:1px solid #ddd;padding:12px;text-align:left;}
+th{background:#0b3c74;color:white;}
+tr:nth-child(even){background:#f8fafc;}
+.btn{background:#25D366;color:white;padding:8px 12px;text-decoration:none;border-radius:5px;}
+footer{background:#0b3c74;color:white;text-align:center;padding:25px;margin-top:50px;}
+@media(max-width:768px){table{font-size:13px;}nav{flex-direction:column;}nav ul{flex-wrap:wrap;justify-content:center;margin-top:15px;}}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">YAOXIAO CHEM</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="product-catalog.html">Catalog</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="banner">
+<h1>Product Catalog</h1>
+<p>Specialty Chemicals · Intermediates · Industrial Raw Materials</p>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search by product name, CAS number or category...">
+</div>
+
+<table id="productTable">
+<thead>
+<tr>
+<th>Product Name</th>
+<th>CAS No.</th>
+<th>Category</th>
+<th>Application</th>
+<th>Inquiry</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>2,2,2-Trifluoroethylamine</td>
+<td>-</td>
+<td>Fluorinated Chemicals</td>
+<td>Pharmaceutical / Agrochemical Intermediate</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>2,2-Difluoroacetamide</td>
+<td>-</td>
+<td>Fluorinated Chemicals</td>
+<td>Fine Chemical Intermediate</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Zirconium Fluoride</td>
+<td>-</td>
+<td>Industrial Chemicals</td>
+<td>Inorganic Fluoride</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Magnesium Nitrate Hexahydrate</td>
+<td>-</td>
+<td>Industrial Chemicals</td>
+<td>Inorganic Salt</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Manganese Oxide</td>
+<td>-</td>
+<td>Industrial Chemicals</td>
+<td>Metal Oxide</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Pyrazole Derivatives</td>
+<td>-</td>
+<td>Pharmaceutical Intermediates</td>
+<td>Custom Chemical Intermediate</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Pyridine Derivatives</td>
+<td>-</td>
+<td>Pharmaceutical Intermediates</td>
+<td>Heterocyclic Intermediate</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+<tr>
+<td>Fungicide Intermediates</td>
+<td>-</td>
+<td>Agrochemical Intermediates</td>
+<td>Crop Protection Chemicals</td>
+<td><a class="btn" href="contact.html">Inquiry</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
+<p>Global Specialty Chemicals Supplier</p>
+</footer>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const rows = document.querySelectorAll("#productTable tbody tr");
+
+searchInput.addEventListener("keyup", function(){
+    const keyword = this.value.toLowerCase();
+    rows.forEach(row=>{
+        row.style.display = row.innerText.toLowerCase().includes(keyword) ? "" : "none";
+    });
+});
+</script>
+
+</body>
+</html>

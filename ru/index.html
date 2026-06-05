@@ -1,1 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Поставщик фармацевтических промежуточных продуктов | Агрохимические промежуточные продукты | Hebei Yaoxiao</title>
+
+<meta name="description" content="Hebei Yaoxiao supplies pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals worldwide.">
+
+<meta name="keywords" content="pharmaceutical intermediates, agrochemical intermediates, industrial chemicals, fine chemicals supplier china, specialty chemicals supplier">
+
+<meta property="og:title" content="Hebei Yaoxiao New Materials Technology Co., Ltd.">
+<meta property="og:description" content="Supplier of pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yaoxiaochem.com/ru/">
+
+<link rel="alternate" hreflang="en" href="https://yaoxiaochem.com/">
+<link rel="alternate" hreflang="zh" href="https://yaoxiaochem.com/zh/">
+<link rel="alternate" hreflang="ru" href="https://yaoxiaochem.com/ru/">
+<link rel="alternate" hreflang="es" href="https://yaoxiaochem.com/es/">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#0b3c74;
+color:white;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+width:52px;
+height:52px;
+object-fit:contain;
+background:white;
+border-radius:6px;
+padding:3px;
+}
+
+.company-name{
+font-size:17px;
+font-weight:bold;
+color:white;
+}
+
+.company-slogan{
+font-size:12px;
+opacity:.85;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:15px;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.language-switch{
+display:flex;
+gap:6px;
+}
+
+.language-switch a{
+color:white;
+text-decoration:none;
+font-size:12px;
+padding:5px 8px;
+border:1px solid rgba(255,255,255,.4);
+border-radius:4px;
+transition:.3s;
+}
+
+.language-switch a:hover{
+background:white;
+color:#0b3c74;
+}
+
+.hero-slider{
+position:relative;
+height:650px;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+transition:opacity 1s ease;
+}
+
+.slide.active{
+opacity:1;
+}
+
+.slide::after{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.48);
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+z-index:5;
+width:90%;
+}
+
+.hero-content h1{
+font-size:46px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:21px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#25D366;
+color:white;
+padding:12px 22px;
+display:inline-block;
+margin:8px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn-blue{
+background:#0b3c74;
+}
+
+.btn-white{
+background:white;
+color:#0b3c74;
+}
+
+.section{
+padding:65px 0;
+}
+
+.section-title{
+text-align:center;
+color:#0b3c74;
+font-size:32px;
+margin-bottom:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.product-grid .card{
+padding:18px;
+}
+
+.product-grid .card h3{
+font-size:20px;
+min-height:55px;
+}
+
+.product-grid .card p{
+font-size:14px;
+line-height:1.6;
+min-height:100px;
+}
+
+.card{
+border:1px solid #ddd;
+padding:20px;
+border-radius:10px;
+background:white;
+transition:.3s;
+}
+
+.card:hover{
+box-shadow:0 6px 18px rgba(0,0,0,.12);
+transform:translateY(-4px);
+}
+
+.card h3{
+color:#0b3c74;
+margin-bottom:12px;
+}
+
+.light{
+background:#f5f7fa;
+}
+
+.form input,
+.form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:15px;
+}
+
+.form button{
+background:#0b3c74;
+color:white;
+padding:14px;
+border:none;
+width:100%;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+background:#0b3c74;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:992px){
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+.nav-right{
+flex-direction:column;
+gap:12px;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-slider{
+height:560px;
+}
+
+.hero-content h1{
+font-size:32px;
+}
+
+.hero-content p{
+font-size:17px;
+}
+
+}
+
+@media(max-width:576px){
+.product-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+
+<div class="brand">
+<img src="../images/logo.png" alt="Hebei Yaoxiao Logo">
+<div>
+<div class="company-name">Hebei Yaoxiao New Materials Technology Co., Ltd.</div>
+<div class="company-slogan">Поставщик специальных химикатов из Китая</div>
+</div>
+</div>
+
+<div class="nav-right">
+
+<ul>
+<li><a href="../index.html">Главная</a></li>
+<li><a href="../products.html">Каталог продукции</a></li>
+<li><a href="../top-products.html">Популярные продукты</a></li>
+<li><a href="../facilities.html">Преимущества компании</a></li>
+<li><a href="../about.html">О нас</a></li>
+<li><a href="../contact.html">Контакты</a></li>
+</ul>
+
+<div class="language-switch">
+<a href="../index.html">EN</a>
+<a href="../zh/index.html">中文</a>
+<a href="index.html">RU</a>
+<a href="../es/index.html">ES</a>
+</div>
+
+</div>
+
+</nav>
+</div>
+</header>
+
+<section class="hero-slider">
+
+<div class="slide active" style="background-image:url('../images/hero1.jpg')"></div>
+<div class="slide" style="background-image:url('../images/hero2.jpg')"></div>
+<div class="slide" style="background-image:url('../images/hero3.jpg')"></div>
+<div class="slide" style="background-image:url('../images/hero4.jpg')"></div>
+<div class="slide" style="background-image:url('../images/hero5.jpg')"></div>
+
+<div class="hero-content">
+<h1>Поставщик специальных химикатов из Китая</h1>
+<p>Фармацевтические промежуточные продукты · Агрохимические промежуточные продукты · Промышленные химикаты · Тонкая химия</p>
+
+<a class="btn" href="../products.html">Посмотреть каталог</a>
+<a class="btn btn-white" href="../contact.html">Отправить запрос</a>
+</div>
+
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Категории продукции</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<h3>Фармацевтические промежуточные продукты</h3>
+<p>
+Гетероциклические соединения, пиридины, пиримидины, амины и специальные строительные блоки для фармацевтического синтеза.
+</p>
+<a class="btn btn-blue" href="../products.html">Смотреть продукты</a>
+</div>
+
+<div class="card">
+<h3>Агрохимические промежуточные продукты</h3>
+<p>
+Промежуточные продукты для фунгицидов, гербицидов, инсектицидов и средств защиты растений.
+</p>
+<a class="btn btn-blue" href="../products.html">Смотреть продукты</a>
+</div>
+
+<div class="card">
+<h3>Промышленные химикаты</h3>
+<p>
+Неорганические соли, оксиды, растворители, промышленные добавки и химическое сырье.
+</p>
+<a class="btn btn-blue" href="../products.html">Смотреть продукты</a>
+</div>
+
+<div class="card">
+<h3>Тонкая химия</h3>
+<p>
+Специальные химические соединения и продукты тонкого органического синтеза для промышленного применения.
+</p>
+<a class="btn btn-blue" href="../products.html">Смотреть продукты</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section light">
+<div class="container">
+
+<h2 class="section-title">Почему выбирают Yaoxiao Chem</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>8000+ продуктов</h3>
+<p>Широкая база продуктов для фармацевтического, агрохимического и промышленного рынков.</p>
+</div>
+
+<div class="card">
+<h3>Четкий фокус продукции</h3>
+<p>Мы специализируемся на фармацевтических промежуточных продуктах, агрохимических промежуточных продуктах и промышленном химическом сырье.</p>
+</div>
+
+<div class="card">
+<h3>Поддержка экспорта</h3>
+<p>Быстрый ответ, экспортные документы, координация логистики и поддержка международных клиентов.</p>
+</div>
+
+<div class="card">
+<h3>Поиск и подбор продуктов</h3>
+<p>Поддержка в подборе химических продуктов, проверке доступности и координации цепочки поставок.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Преимущества компании</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Профессиональная команда</h3>
+<p>Опытная команда продаж и технической поддержки для международных клиентов химической отрасли.</p>
+</div>
+
+<div class="card">
+<h3>Контроль качества</h3>
+<p>Поддержка тестирования продукции, проверки качества и предоставления документов COA, TDS и SDS.</p>
+</div>
+
+<div class="card">
+<h3>Складское управление</h3>
+<p>Поддержка управления запасами, упаковки и подготовки продукции к отгрузке.</p>
+</div>
+
+<div class="card">
+<h3>Международная логистика</h3>
+<p>Морские перевозки, авиаперевозки, экспресс-доставка и контейнерные решения.</p>
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;">
+<a class="btn btn-blue" href="../facilities.html">Узнать больше</a>
+</p>
+
+</div>
+</section>
+
+<section class="section light">
+<div class="container">
+
+<h2 class="section-title">Отправить запрос</h2>
+
+<p style="text-align:center;max-width:850px;margin:0 auto 25px;">
+Пожалуйста, укажите название продукта, CAS-номер, чистоту, количество и страну назначения.
+Наша команда ответит с предложением и информацией о продукте в кратчайшие сроки.
+</p>
+
+<form class="form" action="https://formspree.io/f/xrevbdke" method="POST">
+
+<input type="text" name="name" placeholder="Ваше имя" required>
+
+<input type="email" name="email" placeholder="Ваш Email" required>
+
+<input type="text" name="product" placeholder="Название продукта или CAS-номер" required>
+
+<input type="text" name="category" placeholder="Категория (Pharma / Agro / Industrial)">
+
+<input type="text" name="purity" placeholder="Чистота / Спецификация">
+
+<input type="text" name="quantity" placeholder="Необходимое количество">
+
+<input type="text" name="country" placeholder="Страна назначения">
+
+<textarea name="message" rows="5" placeholder="Опишите ваши требования..."></textarea>
+
+<input type="hidden" name="_subject" value="New Inquiry from Yaoxiao Chem Russian Website">
+
+<button type="submit">Отправить запрос</button>
+
+</form>
+
+<p style="margin-top:12px;text-align:center;">
+Email: peter@yaoxiaochem.com
+</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
+<p>Фармацевтические промежуточные продукты · Агрохимические промежуточные продукты · Промышленные химикаты</p>
+<p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
+</footer>
+
+<a href="https://wa.me/8615832440987"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+z-index:999;">
+💬
+</a>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let current=0;
+
+setInterval(()=>{
+slides[current].classList.remove("active");
+current=(current+1)%slides.length;
+slides[current].classList.add("active");
+},5000);
+</script>
+
+</body>
+</html>

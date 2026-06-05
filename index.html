@@ -168,7 +168,38 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 }
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
 
+.product-grid .card{
+padding:18px;
+}
+
+.product-grid .card h3{
+font-size:20px;
+min-height:55px;
+}
+
+.product-grid .card p{
+font-size:14px;
+line-height:1.6;
+min-height:90px;
+}
+
+@media(max-width:992px){
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:576px){
+.product-grid{
+grid-template-columns:1fr;
+}
+}
 .card{
 border:1px solid #ddd;
 padding:20px;
@@ -297,47 +328,41 @@ font-size:17px;
 
 </section>
 
-<section class="section">
-<div class="container">
-
-<h2 class="section-title">Product Categories</h2>
-
-<div class="grid">
+<div class="product-grid">
 
 <div class="card">
 <h3>Pharmaceutical Intermediates</h3>
-<p>Heterocyclic compounds, amines, aromatic intermediates and fine chemical building blocks.</p>
+<p>
+Heterocyclic compounds, pyridines, pyrimidines, amines and specialty pharmaceutical building blocks.
+</p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
 
 <div class="card">
 <h3>Agrochemical Intermediates</h3>
-<p>Intermediates for fungicides, herbicides, insecticides and crop protection products.</p>
+<p>
+Intermediates for fungicides, herbicides, insecticides and crop protection active ingredients.
+</p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
 
 <div class="card">
 <h3>Industrial Chemicals</h3>
-<p>Solvents, salts, oxides, acids, alkalis and industrial chemical raw materials.</p>
+<p>
+Industrial raw materials including inorganic salts, oxides, solvents and specialty additives.
+</p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
 
 <div class="card">
 <h3>Fine Chemicals</h3>
-<p>Specialty chemicals for synthesis, formulation, research and industrial applications.</p>
-<a class="btn btn-blue" href="products.html">View Products</a>
-</div>
-
-<div class="card">
-<h3>Construction Chemicals</h3>
-<p>Selected construction chemical additives including HPMC, HEMC and RDP.</p>
+<p>
+Custom sourcing, specialty compounds and fine chemical products for industrial applications.
+</p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
 
 </div>
-
-</div>
-</section>
 
 <section class="section light">
 <div class="container">

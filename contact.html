@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+
+<title>Contact Us | Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+
+<meta name="description" content="Contact Hebei Yaoxiao for pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals quotations.">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -19,16 +17,19 @@ line-height:1.6;
 color:#333;
 }
 
+.container{
+width:96%;
+max-width:1500px;
+margin:auto;
+}
+
 header{
 background:#0b3c74;
 color:white;
-padding:20px 0;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 nav{
@@ -37,95 +38,204 @@ justify-content:space-between;
 align-items:center;
 }
 
-.logo{
-font-size:28px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+width:52px;
+height:52px;
+object-fit:contain;
+background:white;
+border-radius:6px;
+padding:3px;
+}
+
+.company-name{
+font-size:17px;
 font-weight:bold;
+color:white;
+}
+
+.company-slogan{
+font-size:12px;
+opacity:.85;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-}
-
-nav ul li{
-margin-left:25px;
+gap:35px;
+white-space:nowrap;
+align-items:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+font-size:16px;
+font-weight:500;
+white-space:nowrap;
+}
+
+.language-dropdown{
+position:relative;
+}
+
+.lang-btn{
+background:none;
+border:1px solid rgba(255,255,255,.4);
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+white-space:nowrap;
+}
+
+.lang-menu{
+display:none;
+position:absolute;
+top:42px;
+right:0;
+background:white;
+min-width:160px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+overflow:hidden;
+z-index:9999;
+}
+
+.lang-menu a{
+display:block;
+padding:12px 15px;
+color:#333;
+text-decoration:none;
+font-size:14px;
+}
+
+.lang-menu a:hover{
+background:#f5f7fa;
+}
+
+.language-dropdown:hover .lang-menu{
+display:block;
 }
 
 .banner{
 background:#f4f7fb;
-padding:70px 20px;
+padding:75px 20px;
 text-align:center;
 }
 
 .banner h1{
 font-size:42px;
 color:#0b3c74;
+margin-bottom:12px;
 }
 
 .section{
-padding:60px 0;
+padding:65px 0;
 }
 
 .contact-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:1fr 1.2fr;
 gap:40px;
+align-items:start;
 }
 
 .info-box{
 background:#f8fafc;
-padding:30px;
+padding:32px;
 border-radius:10px;
+border:1px solid #e5e5e5;
 }
 
-.info-box h3{
+.info-box h3,
+.form-box h3{
 color:#0b3c74;
-margin-bottom:15px;
+margin-bottom:18px;
+font-size:24px;
+}
+
+.info-box p{
+margin-bottom:14px;
+}
+
+.info-list{
+margin-top:18px;
+}
+
+.info-list p{
+margin-bottom:16px;
 }
 
 .form-box{
 background:white;
-padding:30px;
+padding:32px;
 border:1px solid #ddd;
 border-radius:10px;
+box-shadow:0 5px 18px rgba(0,0,0,.05);
 }
 
 input,
 textarea{
 width:100%;
-padding:12px;
+padding:13px;
 margin-bottom:15px;
 border:1px solid #ccc;
 border-radius:5px;
+font-size:15px;
 }
 
 button{
 background:#0b3c74;
 color:white;
 border:none;
-padding:14px;
+padding:15px;
 width:100%;
 cursor:pointer;
 font-size:16px;
+border-radius:5px;
+font-weight:bold;
 }
 
 button:hover{
 opacity:0.9;
 }
 
-.whatsapp-btn{
+.btn{
 display:inline-block;
-background:#25D366;
 color:white;
 padding:12px 20px;
 border-radius:5px;
 text-decoration:none;
-margin-top:15px;
+margin-top:10px;
+font-weight:bold;
+}
+
+.btn-blue{
+background:#0b3c74;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.notice{
+background:#eef5ff;
+border-left:5px solid #0b3c74;
+padding:18px;
+margin-bottom:25px;
 }
 
 footer{
@@ -136,7 +246,7 @@ padding:25px;
 margin-top:50px;
 }
 
-@media(max-width:768px){
+@media(max-width:992px){
 
 .contact-grid{
 grid-template-columns:1fr;
@@ -146,57 +256,86 @@ nav{
 flex-direction:column;
 }
 
-nav ul{
-margin-top:15px;
+.nav-right{
+flex-direction:column;
+gap:12px;
+margin-top:12px;
 }
 
+nav ul{
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:576px){
 .banner h1{
 font-size:32px;
 }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container">
-
 <nav>
 
-<div class="logo">YAOXIAO CHEM</div>
+<div class="brand">
+<img src="images/logo.png" alt="Hebei Yaoxiao Logo">
+<div>
+<div class="company-name">Hebei Yaoxiao New Materials Technology Co., Ltd.</div>
+<div class="company-slogan">Specialty Chemicals Supplier From China</div>
+</div>
+</div>
+
+<div class="nav-right">
 
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="product-catalog.html">Catalog</a></li>
+<li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 
-</nav>
+<div class="language-dropdown">
+<button class="lang-btn">🌐 Language ▼</button>
+
+<div class="lang-menu">
+<a href="index.html">English</a>
+<a href="zh/index.html">中文</a>
+<a href="ru/index.html">Русский</a>
+<a href="es/index.html">Español</a>
+</div>
+</div>
 
 </div>
 
+</nav>
+</div>
 </header>
 
 <section class="banner">
-
 <h1>Contact Us</h1>
-
-<p>Get Technical Support and Product Quotations</p>
-
+<p>Get product quotations, technical support and export service</p>
 </section>
 
 <section class="section">
-
 <div class="container">
+
+<div class="notice">
+<p><strong>Inquiry Tips:</strong> Please provide product name, CAS number, purity, quantity and destination country for faster quotation.</p>
+</div>
 
 <div class="contact-grid">
 
@@ -204,53 +343,36 @@ font-size:32px;
 
 <h3>Company Information</h3>
 
+<div class="info-list">
+
 <p><strong>Company:</strong><br>
 Hebei Yaoxiao New Materials Technology Co., Ltd.
 </p>
 
-<br>
-
 <p><strong>Main Products:</strong><br>
 Pharmaceutical Intermediates<br>
 Agrochemical Intermediates<br>
-Fluorinated Chemicals<br>
 Industrial Chemicals<br>
 Fine Chemicals
 </p>
 
-
-<br>
-
 <p><strong>Email:</strong><br>
 peter@yaoxiaochem.com
 </p>
-<a href="mailto:peter@yaoxiaochem.com"
-style="
-display:inline-block;
-background:#0b3c74;
-color:white;
-padding:12px 20px;
-border-radius:5px;
-text-decoration:none;
-margin-top:15px;">
-Email Us
-</a>
-<br>
 
-<p><strong>Website:</strong><br>
+<a href="mailto:peter@yaoxiaochem.com" class="btn btn-blue">Email Us</a>
+
+<p style="margin-top:20px;"><strong>Website:</strong><br>
 www.yaoxiaochem.com
 </p>
-
-<br>
 
 <p><strong>Location:</strong><br>
 Hebei Province, China
 </p>
 
-<a href="https://wa.me/8615832440987"
-class="whatsapp-btn">
-WhatsApp Us
-</a>
+<a href="https://wa.me/8615832440987" class="btn whatsapp-btn">WhatsApp Us</a>
+
+</div>
 
 </div>
 
@@ -258,55 +380,27 @@ WhatsApp Us
 
 <h3>Send Inquiry</h3>
 
-<form action="https://formspree.io/f/xrevbdke"
-method="POST">
+<form action="https://formspree.io/f/xrevbdke" method="POST">
 
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-  <input
-type="text"
-name="cas"
-placeholder="CAS Number">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input
-type="text"
-name="purity"
-placeholder="Purity">
+<input type="email" name="email" placeholder="Your Email" required>
 
-<input
-type="text"
-name="quantity"
-placeholder="Required Quantity">
-required>
+<input type="text" name="product" placeholder="Product Name or CAS Number" required>
 
-<input
-type="email"
-name="email"
-placeholder="Your Email"
-required>
+<input type="text" name="cas" placeholder="CAS Number">
 
-<input
-type="text"
-name="country"
-placeholder="Country">
+<input type="text" name="purity" placeholder="Purity / Specification">
 
-<input
-type="text"
-name="product"
-placeholder="Interested Product">
+<input type="text" name="quantity" placeholder="Required Quantity">
 
-<textarea
-name="message"
-rows="6"
-placeholder="Please provide product name, CAS number, purity, quantity and destination country..."
+<input type="text" name="country" placeholder="Destination Country">
 
-required></textarea>
+<textarea name="message" rows="6" placeholder="Please provide product name, CAS number, purity, quantity and destination country..." required></textarea>
 
-<button type="submit">
-Send Inquiry
-</button>
+<input type="hidden" name="_subject" value="New Inquiry from Yaoxiao Chem Contact Page">
+
+<button type="submit">Send Inquiry</button>
 
 </form>
 
@@ -315,22 +409,13 @@ Send Inquiry
 </div>
 
 </div>
-
 </section>
 
 <footer>
-
-<p>
-Hebei Yaoxiao New Materials Technology Co., Ltd.
-</p>
-
-<p>
-Supplier of Pharmaceutical, Agrochemical and Industrial Chemicals
-</p>
-
+<p>Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
+<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals · Fine Chemicals</p>
+<p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
 </footer>
-
-<!-- Floating WhatsApp -->
 
 <a href="https://wa.me/8615832440987"
 style="

@@ -3,32 +3,302 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+
+<title>About Us | Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+
+<meta name="description" content="Learn about Hebei Yaoxiao New Materials Technology Co., Ltd., a China-based supplier of pharmaceutical intermediates, agrochemical intermediates, industrial chemicals, fine chemicals and new material products.">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.7;color:#333;}
-header{background:#0b3c74;color:white;padding:20px 0;}
-.container{width:90%;max-width:1200px;margin:auto;}
-nav{display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:28px;font-weight:bold;}
-nav ul{display:flex;list-style:none;}
-nav ul li{margin-left:25px;}
-nav a{color:white;text-decoration:none;}
-.banner{background:#f4f7fb;padding:70px 20px;text-align:center;}
-.banner h1{font-size:42px;color:#0b3c74;margin-bottom:15px;}
-.section{padding:70px 0;}
-.section-title{text-align:center;margin-bottom:40px;color:#0b3c74;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.card{border:1px solid #ddd;padding:25px;border-radius:10px;background:white;}
-.card h3{color:#0b3c74;margin-bottom:10px;}
-.highlight{background:#f8fafc;}
-.cta{text-align:center;padding:60px 20px;background:#0b3c74;color:white;}
-.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#25D366;color:white;text-decoration:none;border-radius:5px;font-weight:bold;}
-footer{background:#0b3c74;color:white;text-align:center;padding:25px;}
-@media(max-width:768px){nav{flex-direction:column;}nav ul{margin-top:15px;} .banner h1{font-size:32px;}}
-</style>
 
+body{
+font-family:Arial,Helvetica,sans-serif;
+line-height:1.7;
+color:#333;
+}
+
+.container{
+width:96%;
+max-width:1500px;
+margin:auto;
+}
+
+header{
+background:#0b3c74;
+color:white;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+width:52px;
+height:52px;
+object-fit:contain;
+background:white;
+border-radius:6px;
+padding:3px;
+}
+
+.company-name{
+font-size:17px;
+font-weight:bold;
+color:white;
+}
+
+.company-slogan{
+font-size:12px;
+opacity:.85;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+white-space:nowrap;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+font-weight:500;
+white-space:nowrap;
+}
+
+.language-dropdown{
+position:relative;
+}
+
+.lang-btn{
+background:none;
+border:1px solid rgba(255,255,255,.4);
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+white-space:nowrap;
+}
+
+.lang-menu{
+display:none;
+position:absolute;
+top:42px;
+right:0;
+background:white;
+min-width:160px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+overflow:hidden;
+z-index:9999;
+}
+
+.lang-menu a{
+display:block;
+padding:12px 15px;
+color:#333;
+text-decoration:none;
+font-size:14px;
+}
+
+.lang-menu a:hover{
+background:#f5f7fa;
+}
+
+.language-dropdown:hover .lang-menu{
+display:block;
+}
+
+.banner{
+background:#f4f7fb;
+padding:75px 20px;
+text-align:center;
+}
+
+.banner h1{
+font-size:42px;
+color:#0b3c74;
+margin-bottom:15px;
+}
+
+.section{
+padding:70px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:#0b3c74;
+font-size:32px;
+}
+
+.profile-img{
+width:100%;
+max-width:1100px;
+height:450px;
+object-fit:cover;
+display:block;
+margin:0 auto 40px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.profile-text{
+max-width:1100px;
+margin:auto;
+font-size:16px;
+color:#333;
+}
+
+.profile-text p{
+margin-bottom:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.card{
+border:1px solid #ddd;
+padding:25px;
+border-radius:10px;
+background:white;
+transition:.3s;
+}
+
+.card:hover{
+box-shadow:0 6px 18px rgba(0,0,0,.12);
+transform:translateY(-4px);
+}
+
+.card h3{
+color:#0b3c74;
+margin-bottom:10px;
+}
+
+.stat-card{
+text-align:center;
+background:white;
+border:1px solid #ddd;
+padding:28px 20px;
+border-radius:10px;
+}
+
+.stat-card h3{
+color:#0b3c74;
+font-size:22px;
+margin-bottom:10px;
+}
+
+.stat-card p{
+font-size:24px;
+font-weight:bold;
+color:#25D366;
+}
+
+.highlight{
+background:#f8fafc;
+}
+
+.cta{
+text-align:center;
+padding:65px 20px;
+background:#0b3c74;
+color:white;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+footer{
+background:#0b3c74;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:992px){
+
+.stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav{
+flex-direction:column;
+}
+
+.nav-right{
+flex-direction:column;
+gap:12px;
+margin-top:12px;
+}
+
+nav ul{
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:576px){
+
+.banner h1{
+font-size:32px;
+}
+
+.profile-img{
+height:300px;
+}
+
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
 </head>
 
 <body>
@@ -36,16 +306,39 @@ footer{background:#0b3c74;color:white;text-align:center;padding:25px;}
 <header>
 <div class="container">
 <nav>
-<div class="logo">YAOXIAO CHEM</div>
+
+<div class="brand">
+<img src="images/logo.png" alt="Hebei Yaoxiao Logo">
+<div>
+<div class="company-name">Hebei Yaoxiao New Materials Technology Co., Ltd.</div>
+<div class="company-slogan">Specialty Chemicals Supplier From China</div>
+</div>
+</div>
+
+<div class="nav-right">
+
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="product-catalog-clean.html">Catalog</a></li>
+<li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
+
+<div class="language-dropdown">
+<button class="lang-btn">🌐 Language ▼</button>
+
+<div class="lang-menu">
+<a href="index.html">English</a>
+<a href="zh/index.html">中文</a>
+<a href="ru/index.html">Русский</a>
+<a href="es/index.html">Español</a>
+</div>
+</div>
+
+</div>
+
 </nav>
 </div>
 </header>
@@ -57,80 +350,101 @@ footer{background:#0b3c74;color:white;text-align:center;padding:25px;}
 
 <section class="section">
 <div class="container">
+
 <h2 class="section-title">Company Profile</h2>
-<img src="images/factory-front.jpg"
-style="width:100%;max-width:1000px;display:block;margin:0 auto 35px;border-radius:10px;"
-alt="Hebei Yaoxiao Factory">
+
+<img src="images/factory-front.jpg" class="profile-img" alt="Hebei Yaoxiao Factory">
+
+<div class="profile-text">
+
 <p>
-
 Hebei Yaoxiao New Materials Technology Co., Ltd. was established in 2018 and is a professional supplier of pharmaceutical intermediates, agrochemical intermediates, industrial chemical raw materials, fine chemicals and new material products.
-
-Since its establishment, the company has been committed to providing reliable chemical products and supply chain solutions for customers worldwide. From a small manufacturing facility in its early years, Yaoxiao has gradually developed into an international chemical supplier serving customers in more than 30 countries and regions, including Europe, North America, Southeast Asia, the Middle East and Africa.
-
-Our product portfolio covers a wide range of pharmaceutical intermediates, agrochemical intermediates, heterocyclic compounds, amines, aromatic intermediates, industrial chemicals, specialty chemicals and selected new material products. Through continuous product expansion and resource integration, we are able to provide customers with efficient sourcing solutions and stable long-term supply support.
-
-Guided by the philosophy of Integrity, Quality and Long-Term Cooperation, Yaoxiao places strict emphasis on quality management, supplier evaluation and customer satisfaction. Every product undergoes rigorous quality verification procedures to ensure compliance with customer specifications and international standards. We believe that reliable quality is the foundation of sustainable business relationships.
-
-In addition to product quality, we focus on responsive communication, professional technical support and efficient after-sales service. Our experienced team works closely with customers to provide quotation support, product documentation, logistics coordination and customized sourcing solutions according to different market requirements.
-
-Benefiting from China's continuous industrial development, innovation-driven policies and support for advanced manufacturing and new materials, Yaoxiao has achieved steady growth and expanded its global business network year by year. Today, the company continues to strengthen its position as a trusted supplier of pharmaceutical intermediates, agrochemical intermediates, fine chemicals and new material products, creating long-term value for customers around the world.
-
 </p>
-<section class="section highlight">
 
+<p>
+Since its establishment, the company has been committed to providing reliable chemical products and supply chain solutions for customers worldwide. From a small manufacturing facility in its early years, Yaoxiao has gradually developed into an international chemical supplier serving customers in more than 30 countries and regions, including Europe, North America, Southeast Asia, the Middle East and Africa.
+</p>
+
+<p>
+Our product portfolio covers a wide range of pharmaceutical intermediates, agrochemical intermediates, heterocyclic compounds, amines, aromatic intermediates, industrial chemicals, specialty chemicals and selected new material products. Through continuous product expansion and resource integration, we are able to provide customers with efficient sourcing solutions and stable long-term supply support.
+</p>
+
+<p>
+Guided by the philosophy of integrity, quality and long-term cooperation, Yaoxiao places strict emphasis on quality management, supplier evaluation and customer satisfaction. Every product undergoes rigorous quality verification procedures to ensure compliance with customer specifications and international standards. We believe that reliable quality is the foundation of sustainable business relationships.
+</p>
+
+<p>
+In addition to product quality, we focus on responsive communication, professional technical support and efficient after-sales service. Our experienced team works closely with customers to provide quotation support, product documentation, logistics coordination and customized sourcing solutions according to different market requirements.
+</p>
+
+<p>
+Benefiting from China's continuous industrial development, innovation-driven policies and support for advanced manufacturing and new materials, Yaoxiao has achieved steady growth and expanded its global business network year by year. Today, the company continues to strengthen its position as a trusted supplier of pharmaceutical intermediates, agrochemical intermediates, fine chemicals and new material products, creating long-term value for customers around the world.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<section class="section highlight">
 <div class="container">
 
-<div class="grid">
+<div class="stats-grid">
 
-<div class="card">
+<div class="stat-card">
 <h3>Established</h3>
 <p>2018</p>
 </div>
 
-<div class="card">
+<div class="stat-card">
 <h3>Export Countries</h3>
 <p>30+</p>
 </div>
 
-<div class="card">
-<h3>Product Categories</h3>
-<p>4 Main Categories</p>
+<div class="stat-card">
+<h3>Main Categories</h3>
+<p>4</p>
 </div>
 
-<div class="card">
-<h3>Global Customers</h3>
-<p>Worldwide Service</p>
+<div class="stat-card">
+<h3>Global Service</h3>
+<p>Worldwide</p>
 </div>
 
 </div>
 
-</div>
-
-</section>
 </div>
 </section>
 
-<section class="section highlight">
+<section class="section">
 <div class="container">
+
 <h2 class="section-title">Our Advantages</h2>
+
 <div class="grid">
+
 <div class="card">
 <h3>Stable Quality</h3>
-<p>Consistent quality of pharmaceutical, agrochemical and industrial chemicals.</p>
+<p>Consistent quality of pharmaceutical, agrochemical and industrial chemicals through supplier evaluation and quality verification.</p>
 </div>
+
 <div class="card">
 <h3>Reliable Supply</h3>
-<p>Reliable sourcing and logistics for global customers.</p>
+<p>Integrated product resources and supply chain coordination help customers achieve stable long-term procurement.</p>
 </div>
+
 <div class="card">
 <h3>Competitive Pricing</h3>
-<p>Factory-direct sourcing helps customers improve market competitiveness.</p>
+<p>Efficient sourcing and resource integration help customers improve market competitiveness.</p>
 </div>
+
 <div class="card">
 <h3>Professional Service</h3>
-<p>Fast response and technical support for different application requirements.</p>
+<p>Fast response, product documentation, logistics coordination and after-sales support for global customers.</p>
 </div>
+
 </div>
+
 </div>
 </section>
 
@@ -142,9 +456,29 @@ Benefiting from China's continuous industrial development, innovation-driven pol
 
 <footer>
 <p>Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
-<p>Email: peter@yaoxiaochem.com</p>
-<p>Website: www.yaoxiaochem.com</p>
+<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals · Fine Chemicals</p>
+<p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
 </footer>
+
+<a href="https://wa.me/8615832440987"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+z-index:999;">
+💬
+</a>
 
 </body>
 </html>

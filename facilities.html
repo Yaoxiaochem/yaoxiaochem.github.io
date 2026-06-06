@@ -4,17 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Company Strength | Hebei Yaoxiao New Materials Technology Co., Ltd.
-</title>
+<title>Company Strength | Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+
+<meta name="description" content="Explore Hebei Yaoxiao company strength, including professional team, production partners, quality control laboratory, warehouse packaging and global logistics support.">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -22,15 +17,19 @@ line-height:1.6;
 color:#333;
 }
 
-header{
-background:#0b3c74;
-padding:20px 0;
+.container{
+width:96%;
+max-width:1500px;
+margin:auto;
 }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
+header{
+background:#0b3c74;
+color:white;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 nav{
@@ -39,27 +38,102 @@ justify-content:space-between;
 align-items:center;
 }
 
-.logo{
-font-size:26px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+width:52px;
+height:52px;
+object-fit:contain;
+background:white;
+border-radius:6px;
+padding:3px;
+}
+
+.company-name{
+font-size:17px;
 font-weight:bold;
 color:white;
+}
+
+.company-slogan{
+font-size:12px;
+opacity:.85;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-gap:20px;
+gap:35px;
+white-space:nowrap;
+align-items:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+font-size:16px;
+font-weight:500;
+white-space:nowrap;
+}
+
+.language-dropdown{
+position:relative;
+}
+
+.lang-btn{
+background:none;
+border:1px solid rgba(255,255,255,.4);
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+white-space:nowrap;
+}
+
+.lang-menu{
+display:none;
+position:absolute;
+top:42px;
+right:0;
+background:white;
+min-width:160px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+overflow:hidden;
+z-index:9999;
+}
+
+.lang-menu a{
+display:block;
+padding:12px 15px;
+color:#333;
+text-decoration:none;
+font-size:14px;
+}
+
+.lang-menu a:hover{
+background:#f5f7fa;
+}
+
+.language-dropdown:hover .lang-menu{
+display:block;
 }
 
 .banner{
 background:#f5f7fb;
 text-align:center;
-padding:70px 20px;
+padding:75px 20px;
 }
 
 .banner h1{
@@ -70,42 +144,50 @@ margin-bottom:15px;
 
 .banner p{
 font-size:18px;
+max-width:900px;
+margin:auto;
 }
 
 .section{
-padding:60px 0;
+padding:65px 0;
+}
+
+.section:nth-of-type(even){
+background:#f8fafc;
 }
 
 .section-title{
 text-align:center;
 color:#0b3c74;
-margin-bottom:30px;
+margin-bottom:18px;
 font-size:32px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:320px;
-object-fit:cover;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
-transition:.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.02);
 }
 
 .description{
 text-align:center;
 max-width:900px;
-margin:0 auto 30px;
+margin:0 auto 35px;
+color:#555;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+transition:.3s;
+background:#eee;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
 }
 
 footer{
@@ -116,186 +198,222 @@ padding:25px;
 margin-top:50px;
 }
 
-@media(max-width:768px){
+@media(max-width:1200px){
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:992px){
+
+nav{
+flex-direction:column;
+}
+
+.nav-right{
+flex-direction:column;
+gap:12px;
+margin-top:12px;
+}
+
+nav ul{
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:576px){
 
 .gallery{
 grid-template-columns:1fr;
+}
+
+.gallery img{
+height:230px;
 }
 
 .banner h1{
 font-size:32px;
 }
 
-nav{
-flex-direction:column;
 }
-
-nav ul{
-margin-top:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container">
-
 <nav>
 
-<div class="logo">
-YAOXIAO CHEM
+<div class="brand">
+<img src="images/logo.png" alt="Hebei Yaoxiao Logo">
+<div>
+<div class="company-name">Hebei Yaoxiao New Materials Technology Co., Ltd.</div>
+<div class="company-slogan">Specialty Chemicals Supplier From China</div>
 </div>
+</div>
+
+<div class="nav-right">
 
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="product-catalog.html">Catalog</a></li>
+<li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 
-</nav>
+<div class="language-dropdown">
+<button class="lang-btn">🌐 Language ▼</button>
+
+<div class="lang-menu">
+<a href="index.html">English</a>
+<a href="zh/index.html">中文</a>
+<a href="ru/index.html">Русский</a>
+<a href="es/index.html">Español</a>
+</div>
+</div>
 
 </div>
 
+</nav>
+</div>
 </header>
 
 <section class="banner">
-
 <h1>Company Strength</h1>
-
-<p>
-Professional Team · Quality Control · Warehousing · Global Logistics
-</p>
-
+<p>Professional Team · Production Partners · Quality Control · Warehousing · Global Logistics</p>
 </section>
 
 <section class="section">
-
 <div class="container">
 
 <h2 class="section-title">Office & Team</h2>
 
 <p class="description">
-Professional sales and customer support team providing fast response and reliable service.
+Our sales and customer support team provides fast response, professional communication and reliable service for global chemical customers.
 </p>
 
 <div class="gallery">
-<img src="images/office1.jpg">
-<img src="images/office2.jpg">
-<img src="images/office3.jpg">
-<img src="images/office4.jpg">
+<img src="images/office1.jpg" alt="Office and Team 1">
+<img src="images/office2.jpg" alt="Office and Team 2">
+<img src="images/office3.jpg" alt="Office and Team 3">
+<img src="images/office4.jpg" alt="Office and Team 4">
 </div>
 
 </div>
-
 </section>
 
 <section class="section">
-
 <div class="container">
 
 <h2 class="section-title">Production Partners</h2>
 
 <p class="description">
-Stable manufacturing resources and long-term production cooperation.
+We cooperate with stable production partners and qualified manufacturing resources to support reliable long-term supply.
 </p>
 
 <div class="gallery">
-<img src="images/factory1.jpg">
-<img src="images/factory2.jpg">
-<img src="images/factory3.jpg">
-<img src="images/factory4.jpg">
+<img src="images/factory1.jpg" alt="Production Partner 1">
+<img src="images/factory2.jpg" alt="Production Partner 2">
+<img src="images/factory3.jpg" alt="Production Partner 3">
+<img src="images/factory4.jpg" alt="Production Partner 4">
 </div>
 
 </div>
-
 </section>
 
 <section class="section">
-
 <div class="container">
 
 <h2 class="section-title">Quality Control Laboratory</h2>
 
 <p class="description">
-Strict testing procedures ensure product consistency and quality.
+Quality verification, product testing and documentation support help ensure product consistency and customer confidence.
 </p>
 
 <div class="gallery">
-<img src="images/lab1.jpg">
-<img src="images/lab2.jpg">
-<img src="images/lab3.jpg">
-<img src="images/lab4.jpg">
+<img src="images/lab1.jpg" alt="Quality Control Laboratory 1">
+<img src="images/lab2.jpg" alt="Quality Control Laboratory 2">
+<img src="images/lab3.jpg" alt="Quality Control Laboratory 3">
+<img src="images/lab4.jpg" alt="Quality Control Laboratory 4">
 </div>
 
 </div>
-
 </section>
 
 <section class="section">
-
 <div class="container">
 
 <h2 class="section-title">Warehouse & Packaging</h2>
 
 <p class="description">
-Efficient inventory management and export packaging support.
+Efficient inventory coordination, export packaging and shipment preparation support smooth international delivery.
 </p>
 
 <div class="gallery">
-<img src="images/warehouse1.jpg">
-<img src="images/warehouse2.jpg">
-<img src="images/warehouse3.jpg">
-<img src="images/warehouse4.jpg">
+<img src="images/warehouse1.jpg" alt="Warehouse and Packaging 1">
+<img src="images/warehouse2.jpg" alt="Warehouse and Packaging 2">
+<img src="images/warehouse3.jpg" alt="Warehouse and Packaging 3">
+<img src="images/warehouse4.jpg" alt="Warehouse and Packaging 4">
 </div>
 
 </div>
-
 </section>
 
 <section class="section">
-
 <div class="container">
 
 <h2 class="section-title">Global Logistics</h2>
 
 <p class="description">
-Sea freight, air freight, express delivery and container transportation.
+We support sea freight, air freight, express delivery and container transportation solutions for customers worldwide.
 </p>
 
 <div class="gallery">
-<img src="images/logistics1.jpg">
-<img src="images/logistics2.jpg">
-<img src="images/logistics3.jpg">
-<img src="images/logistics4.jpg">
+<img src="images/logistics1.jpg" alt="Global Logistics 1">
+<img src="images/logistics2.jpg" alt="Global Logistics 2">
+<img src="images/logistics3.jpg" alt="Global Logistics 3">
+<img src="images/logistics4.jpg" alt="Global Logistics 4">
 </div>
 
 </div>
-
 </section>
 
 <footer>
-
-<p>
-Hebei Yaoxiao New Materials Technology Co., Ltd.
-</p>
-
-<p>
-Global Specialty Chemicals Supplier
-</p>
-
+<p>© 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
+<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals · Fine Chemicals</p>
+<p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
 </footer>
+
+<a href="https://wa.me/8615832440987"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+z-index:999;">
+💬
+</a>
 
 </body>
 </html>

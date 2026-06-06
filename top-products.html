@@ -3,28 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Top Products | Pharmaceutical Intermediates & Industrial Chemicals | Hebei Yaoxiao</title>
 
+<meta name="description" content="Browse selected top products from Hebei Yaoxiao, including pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals.">
+
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#333;line-height:1.6;}
-.container{width:90%;max-width:1200px;margin:auto;}
-header{background:#0b3c74;color:white;padding:20px 0;}
-nav{display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:26px;font-weight:bold;}
-nav ul{display:flex;list-style:none;gap:20px;}
-nav a{color:white;text-decoration:none;}
-.banner{background:#f4f7fb;text-align:center;padding:65px 20px;}
-.banner h1{color:#0b3c74;font-size:40px;}
-.section{padding:50px 0;}
-.notice{background:#eef5ff;padding:20px;border-left:5px solid #0b3c74;margin-bottom:25px;}
-.search-box input{width:100%;padding:14px;border:1px solid #ccc;border-radius:6px;font-size:16px;margin-bottom:25px;}
-table{width:100%;border-collapse:collapse;}
-th,td{border:1px solid #ddd;padding:12px;text-align:left;}
-th{background:#0b3c74;color:white;}
-tr:nth-child(even){background:#f8fafc;}
-.btn{background:#25D366;color:white;padding:8px 12px;text-decoration:none;border-radius:5px;display:inline-block;}
-footer{background:#0b3c74;color:white;text-align:center;padding:25px;margin-top:50px;}
-@media(max-width:768px){nav{flex-direction:column;}nav ul{flex-wrap:wrap;justify-content:center;margin-top:15px;}table{font-size:13px;}}
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:96%;
+max-width:1500px;
+margin:auto;
+}
+
+header{
+background:#0b3c74;
+color:white;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+width:52px;
+height:52px;
+object-fit:contain;
+background:white;
+border-radius:6px;
+padding:3px;
+}
+
+.company-name{
+font-size:17px;
+font-weight:bold;
+color:white;
+}
+
+.company-slogan{
+font-size:12px;
+opacity:.85;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+white-space:nowrap;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+font-weight:500;
+white-space:nowrap;
+}
+
+.language-dropdown{
+position:relative;
+}
+
+.lang-btn{
+background:none;
+border:1px solid rgba(255,255,255,.4);
+color:white;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:14px;
+white-space:nowrap;
+}
+
+.lang-menu{
+display:none;
+position:absolute;
+top:42px;
+right:0;
+background:white;
+min-width:160px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+overflow:hidden;
+z-index:9999;
+}
+
+.lang-menu a{
+display:block;
+padding:12px 15px;
+color:#333;
+text-decoration:none;
+font-size:14px;
+}
+
+.lang-menu a:hover{
+background:#f5f7fa;
+}
+
+.language-dropdown:hover .lang-menu{
+display:block;
+}
+
+.banner{
+background:#f4f7fb;
+text-align:center;
+padding:75px 20px;
+}
+
+.banner h1{
+color:#0b3c74;
+font-size:42px;
+margin-bottom:12px;
+}
+
+.banner p{
+max-width:900px;
+margin:auto;
+}
+
+.section{
+padding:55px 0;
+}
+
+.notice{
+background:#eef5ff;
+padding:20px;
+border-left:5px solid #0b3c74;
+margin-bottom:25px;
+border-radius:5px;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+margin-bottom:25px;
+}
+
+.table-wrap{
+overflow:auto;
+border:1px solid #d9dee7;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:900px;
+}
+
+th,td{
+border-bottom:1px solid #e5e7eb;
+border-right:1px solid #edf0f4;
+padding:12px;
+text-align:left;
+vertical-align:top;
+}
+
+th{
+background:#0b3c74;
+color:white;
+}
+
+tr:nth-child(even){
+background:#f8fafc;
+}
+
+tr:hover{
+background:#eef5ff;
+}
+
+.btn{
+background:#25D366;
+color:white;
+padding:8px 12px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+white-space:nowrap;
+font-weight:bold;
+}
+
+footer{
+background:#0b3c74;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:992px){
+
+nav{
+flex-direction:column;
+}
+
+.nav-right{
+flex-direction:column;
+gap:12px;
+margin-top:12px;
+}
+
+nav ul{
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+@media(max-width:576px){
+.banner h1{
+font-size:32px;
+}
+}
 </style>
 </head>
 
@@ -33,35 +260,60 @@ footer{background:#0b3c74;color:white;text-align:center;padding:25px;margin-top:
 <header>
 <div class="container">
 <nav>
-<div class="logo">YAOXIAO CHEM</div>
+
+<div class="brand">
+<img src="images/logo.png" alt="Hebei Yaoxiao Logo">
+<div>
+<div class="company-name">Hebei Yaoxiao New Materials Technology Co., Ltd.</div>
+<div class="company-slogan">Specialty Chemicals Supplier From China</div>
+</div>
+</div>
+
+<div class="nav-right">
+
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="product-catalog-clean.html">Catalog</a></li>
+<li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
+
+<div class="language-dropdown">
+<button class="lang-btn">🌐 Language ▼</button>
+
+<div class="lang-menu">
+<a href="index.html">English</a>
+<a href="zh/index.html">中文</a>
+<a href="ru/index.html">Русский</a>
+<a href="es/index.html">Español</a>
+</div>
+</div>
+
+</div>
+
 </nav>
 </div>
 </header>
 
 <section class="banner">
 <h1>Top Products</h1>
-<p>Selected Pharmaceutical Intermediates, Agrochemical Intermediates and Industrial Chemicals</p>
+<p>Selected Pharmaceutical Intermediates, Agrochemical Intermediates, Industrial Chemicals and Fine Chemicals</p>
 </section>
 
 <section class="section">
 <div class="container">
 
 <div class="notice">
-<p><strong>Inquiry Tips:</strong> Please send product name, CAS number, purity, quantity and destination country for faster quotation.</p>
+<p><strong>Inquiry Tips:</strong> Please send product name, CAS number, purity, quantity and destination country for faster quotation. Email: peter@yaoxiaochem.com</p>
 </div>
 
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="Search by product name, CAS number, category or application...">
 </div>
+
+<div class="table-wrap">
 
 <table id="productTable">
 <thead>
@@ -240,22 +492,45 @@ footer{background:#0b3c74;color:white;text-align:center;padding:25px;margin-top:
 </table>
 
 </div>
+
+</div>
 </section>
 
 <footer>
 <p>© 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
-<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals</p>
+<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals · Fine Chemicals</p>
+<p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
 </footer>
+
+<a href="https://wa.me/8615832440987"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+z-index:999;">
+💬
+</a>
 
 <script>
 const searchInput = document.getElementById("searchInput");
 const rows = document.querySelectorAll("#productTable tbody tr");
 
 searchInput.addEventListener("keyup", function(){
-    const keyword = this.value.toLowerCase();
-    rows.forEach(row=>{
-        row.style.display = row.innerText.toLowerCase().includes(keyword) ? "" : "none";
-    });
+const keyword = this.value.toLowerCase();
+rows.forEach(row=>{
+row.style.display = row.innerText.toLowerCase().includes(keyword) ? "" : "none";
+});
 });
 </script>
 

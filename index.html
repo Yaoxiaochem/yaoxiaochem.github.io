@@ -232,7 +232,37 @@ border-radius:10px;
 background:white;
 transition:.3s;
 }
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
 
+.stat-card{
+background:white;
+border:1px solid #ddd;
+border-radius:10px;
+padding:30px;
+text-align:center;
+transition:.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
+
+.stat-card h3{
+color:#0b3c74;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.stat-card p{
+font-size:32px;
+font-weight:bold;
+color:#25D366;
+}
 .card:hover{
 box-shadow:0 6px 18px rgba(0,0,0,.12);
 transform:translateY(-4px);
@@ -286,7 +316,9 @@ margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
 }
-
+.stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
 .brand{
 flex-direction:column;
 text-align:center;
@@ -478,7 +510,41 @@ Custom sourcing, specialty compounds and fine chemical products for industrial a
 
 </div>
 </section>
+<section class="section" style="background:#f8fafc;">
 
+<div class="container">
+
+<h2 style="text-align:center;color:#0b3c74;margin-bottom:40px;">
+Company Highlights
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3>Founded</h3>
+<p>2018</p>
+</div>
+
+<div class="stat-card">
+<h3>Export Countries</h3>
+<p>30+</p>
+</div>
+
+<div class="stat-card">
+<h3>Product Categories</h3>
+<p>4</p>
+</div>
+
+<div class="stat-card">
+<h3>Response Time</h3>
+<p>24h</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
 <section class="section">
 <div class="container">
 

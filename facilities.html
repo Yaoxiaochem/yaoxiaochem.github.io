@@ -245,7 +245,7 @@ font-size:32px;
 
 }
 </style>
-</head>
+<style id="language-click-style">.language-dropdown.open .lang-menu{display:block}.language.open span{display:block}.lang-btn,.language>button{user-select:none}</style></head>
 
 <body>
 
@@ -274,7 +274,7 @@ font-size:32px;
 <li><a href="contact.html">Contact</a></li>
 </ul>
 
-<div class="language-dropdown"><button class="lang-btn" type="button" aria-label="Select language">Language</button><div class="lang-menu"><a href="facilities.html">English</a><a href="zh/facilities.html">中文</a><a href="ru/facilities.html">Русский</a><a href="es/facilities.html">Español</a></div></div>
+<div class="language-dropdown"><button class="lang-btn" type="button" aria-label="Select language" aria-expanded="false">Language</button><div class="lang-menu"><a href="facilities.html">English</a><a href="zh/facilities.html">中文</a><a href="ru/facilities.html">Русский</a><a href="es/facilities.html">Español</a></div></div>
 
 </div>
 
@@ -408,5 +408,5 @@ z-index:999;">
 💬
 </a>
 
-</body>
+<script id="language-click-script">(function(){function closeAll(except){document.querySelectorAll('.language-dropdown.open,.language.open').forEach(function(el){if(el!==except){el.classList.remove('open');var b=el.querySelector('button');if(b)b.setAttribute('aria-expanded','false');}})}document.querySelectorAll('.lang-btn,.language>button').forEach(function(btn){btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var box=btn.closest('.language-dropdown')||btn.closest('.language');if(!box)return;var open=!box.classList.contains('open');closeAll(box);box.classList.toggle('open',open);btn.setAttribute('aria-expanded',open?'true':'false');});});document.addEventListener('click',function(){closeAll(null);});})();</script></body>
 </html>

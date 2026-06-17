@@ -9,15 +9,34 @@
 <meta name="description" content="Hebei Yaoxiao supplies pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals worldwide.">
 <link rel="canonical" href="https://yaoxiaochem.com/">
 <meta name="keywords" content="pharmaceutical intermediates, agrochemical intermediates, industrial chemicals, fine chemicals supplier china, specialty chemicals supplier">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b3c74">
+<link rel="preload" as="image" href="images/hero1.jpg">
 
 <meta property="og:title" content="Hebei Yaoxiao New Materials Technology Co., Ltd.">
 <meta property="og:description" content="Supplier of pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yaoxiaochem.com">
+<meta property="og:image" content="https://yaoxiaochem.com/images/hero1.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="en" href="https://yaoxiaochem.com/">
 <link rel="alternate" hreflang="zh" href="https://yaoxiaochem.com/zh/">
 <link rel="alternate" hreflang="ru" href="https://yaoxiaochem.com/ru/">
 <link rel="alternate" hreflang="es" href="https://yaoxiaochem.com/es/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hebei Yaoxiao New Materials Technology Co., Ltd.",
+  "url": "https://yaoxiaochem.com/",
+  "logo": "https://yaoxiaochem.com/images/logo.png",
+  "email": "peter@yaoxiaochem.com",
+  "sameAs": [
+    "https://wa.me/8615832440987"
+  ],
+  "description": "Supplier of pharmaceutical intermediates, agrochemical intermediates, industrial chemicals and fine chemicals."
+}
+</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -25,6 +44,11 @@ body{
 font-family:Arial,Helvetica,sans-serif;
 color:#333;
 line-height:1.6;
+}
+
+img{
+max-width:100%;
+height:auto;
 }
 
 .container{
@@ -122,6 +146,7 @@ background-size:cover;
 background-position:center;
 opacity:0;
 transition:opacity 1s ease;
+will-change:opacity;
 }
 
 .slide.active{
@@ -195,7 +220,7 @@ gap:20px;
 }
 .product-grid{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
@@ -315,6 +340,12 @@ nav ul{
 margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
+gap:14px;
+}
+.nav-actions{
+flex-direction:column;
+gap:10px;
+width:100%;
 }
 .stats-grid{
 grid-template-columns:repeat(2,1fr);
@@ -339,6 +370,12 @@ font-size:17px;
 }
 .language-dropdown{
 position:relative;
+}
+
+.nav-actions{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 .lang-btn{
@@ -395,20 +432,22 @@ display:block;
 </div>
 </div>
 
-<div style="display:flex;align-items:center;gap:20px;">
+<div class="nav-actions">
 
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
+<li><a href="certificates.html">Certificates</a></li>
+<li><a href="faq.html">FAQ</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 
 <div class="language-dropdown">
 
-<button class="lang-btn">
+<button class="lang-btn" type="button" aria-label="Select language">
 🌐 Language ▼
 </button>
 
@@ -443,12 +482,17 @@ display:block;
 
 </section>
 
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Product Categories</h2>
+
 <div class="product-grid">
 
 <div class="card">
 <h3>Pharmaceutical Intermediates</h3>
 <p>
-Heterocyclic compounds, pyridines, pyrimidines, amines and specialty pharmaceutical building blocks.
+Pyridine series, pyrimidine series, imidazole series, amino acid derivatives and API intermediates.
 </p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
@@ -456,15 +500,7 @@ Heterocyclic compounds, pyridines, pyrimidines, amines and specialty pharmaceuti
 <div class="card">
 <h3>Agrochemical Intermediates</h3>
 <p>
-Intermediates for fungicides, herbicides, insecticides and crop protection active ingredients.
-</p>
-<a class="btn btn-blue" href="products.html">View Products</a>
-</div>
-
-<div class="card">
-<h3>Industrial Chemicals</h3>
-<p>
-Industrial raw materials including inorganic salts, oxides, solvents and specialty additives.
+Chloropyridines, pyrazoles, pyrimidines and crop protection intermediates.
 </p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
@@ -472,12 +508,47 @@ Industrial raw materials including inorganic salts, oxides, solvents and special
 <div class="card">
 <h3>Fine Chemicals</h3>
 <p>
-Custom sourcing, specialty compounds and fine chemical products for industrial applications.
+Quinoline series, heterocyclic compounds, specialty intermediates and custom synthesis support.
+</p>
+<a class="btn btn-blue" href="products.html">View Products</a>
+</div>
+
+<div class="card">
+<h3>New Energy & Electronic Materials</h3>
+<p>
+Electronic chemicals, battery materials and engineering polymers for advanced material applications.
+</p>
+<a class="btn btn-blue" href="products.html">View Products</a>
+</div>
+
+<div class="card">
+<h3>Industrial Chemicals</h3>
+<p>
+Solvents, organic acids, inorganic salts, oxides and other industrial raw materials.
+</p>
+<a class="btn btn-blue" href="products.html">View Products</a>
+</div>
+
+<div class="card">
+<h3>Water Treatment Chemicals</h3>
+<p>
+Water treatment coagulants, process chemicals and supporting industrial chemical products.
+</p>
+<a class="btn btn-blue" href="products.html">View Products</a>
+</div>
+
+<div class="card">
+<h3>Cosmetic Ingredients</h3>
+<p>
+Functional ingredients, vitamins and custom sourcing support for cosmetic applications.
 </p>
 <a class="btn btn-blue" href="products.html">View Products</a>
 </div>
 
 </div>
+
+</div>
+</section>
 
 <section class="section light">
 <div class="container">
@@ -487,8 +558,8 @@ Custom sourcing, specialty compounds and fine chemical products for industrial a
 <div class="grid">
 
 <div class="card">
-<h3>8000+ Products</h3>
-<p>Large product database covering pharmaceutical, agrochemical and industrial chemical markets.</p>
+<h3>Established in 2018</h3>
+<p>Serving chemical customers with stable sourcing, documentation support and export coordination.</p>
 </div>
 
 <div class="card">
@@ -510,6 +581,39 @@ Custom sourcing, specialty compounds and fine chemical products for industrial a
 
 </div>
 </section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Global Export Markets</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Europe</h3>
+<p>Product sourcing, document support and export coordination for European chemical customers.</p>
+</div>
+
+<div class="card">
+<h3>North America</h3>
+<p>Support for product matching, technical documents and quotation communication.</p>
+</div>
+
+<div class="card">
+<h3>Southeast Asia</h3>
+<p>Flexible supply support for pharmaceutical, agrochemical and industrial chemical markets.</p>
+</div>
+
+<div class="card">
+<h3>Middle East & Africa</h3>
+<p>International logistics coordination and long-term sourcing support for growing markets.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
 <section class="section" style="background:#f8fafc;">
 
 <div class="container">
@@ -532,7 +636,7 @@ Company Highlights
 
 <div class="stat-card">
 <h3>Product Categories</h3>
-<p>4</p>
+<p>7</p>
 </div>
 
 <div class="stat-card">
@@ -629,6 +733,8 @@ Or email: peter@yaoxiaochem.com
 </footer>
 
 <a href="https://wa.me/8615832440987"
+aria-label="Contact Hebei Yaoxiao on WhatsApp"
+title="Contact on WhatsApp"
 style="
 position:fixed;
 bottom:20px;
@@ -645,7 +751,7 @@ font-size:28px;
 text-decoration:none;
 box-shadow:0 5px 10px rgba(0,0,0,0.3);
 z-index:999;">
-💬
+WA
 </a>
 
 <script>

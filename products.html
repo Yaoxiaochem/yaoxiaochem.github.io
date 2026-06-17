@@ -3,390 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products & Catalog | Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
-<meta name="description" content="Browse Hebei Yaoxiao product catalog by English product name, CAS number and primary chemical category.">
-
+<title>Products & Chemical Categories | Hebei Yaoxiao New Materials Technology Co., Ltd.</title>
+<meta name="description" content="Browse Hebei Yaoxiao chemical categories including pharmaceutical intermediates, agrochemical intermediates, fine chemicals, electronic materials, industrial chemicals, water treatment chemicals and cosmetic ingredients.">
+<link rel="canonical" href="https://yaoxiaochem.com/products.html">
 <link rel="alternate" hreflang="en" href="https://yaoxiaochem.com/products.html">
 <link rel="alternate" hreflang="zh" href="https://yaoxiaochem.com/zh/">
 <link rel="alternate" hreflang="ru" href="https://yaoxiaochem.com/ru/">
 <link rel="alternate" hreflang="es" href="https://yaoxiaochem.com/es/">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-color:#333;
-line-height:1.6;
-background:#fff;
-}
-
-.container{
-width:96%;
-max-width:1500px;
-margin:auto;
-}
-
-header{
-background:#0b3c74;
-color:white;
-padding:14px 0;
-position:sticky;
-top:0;
-z-index:999;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.brand img{
-width:52px;
-height:52px;
-object-fit:contain;
-background:white;
-border-radius:6px;
-padding:3px;
-}
-
-.company-name{
-font-size:17px;
-font-weight:bold;
-color:white;
-line-height:1.3;
-}
-
-.company-slogan{
-font-size:12px;
-opacity:.85;
-margin-top:3px;
-}
-
-.nav-right{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:35px;
-white-space:nowrap;
-align-items:center;
-margin:0;
-padding:0;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-size:16px;
-font-weight:500;
-white-space:nowrap;
-}
-
-.language-dropdown{
-position:relative;
-}
-
-.lang-btn{
-background:none;
-border:1px solid rgba(255,255,255,.4);
-color:white;
-padding:8px 12px;
-border-radius:5px;
-cursor:pointer;
-font-size:14px;
-white-space:nowrap;
-}
-
-.lang-menu{
-display:none;
-position:absolute;
-top:42px;
-right:0;
-background:white;
-min-width:160px;
-border-radius:6px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-overflow:hidden;
-z-index:9999;
-}
-
-.lang-menu a{
-display:block;
-padding:12px 15px;
-color:#333;
-text-decoration:none;
-font-size:14px;
-}
-
-.lang-menu a:hover{
-background:#f5f7fa;
-}
-
-.language-dropdown:hover .lang-menu{
-display:block;
-}
-
-.banner{
-background:#f4f7fb;
-text-align:center;
-padding:65px 20px;
-}
-
-.banner h1{
-color:#0b3c74;
-font-size:42px;
-margin:0 0 12px;
-}
-
-.banner p{
-max-width:900px;
-margin:0 auto;
-color:#444;
-}
-
-.controls{
-padding:28px 0 12px;
-background:white;
-position:sticky;
-top:82px;
-z-index:10;
-border-bottom:1px solid #e5e7eb;
-}
-
-.tab-row{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:10px;
-margin-bottom:16px;
-}
-
-.tab-btn{
-border:1px solid #d5dbe3;
-background:#f8fafc;
-color:#0b3c74;
-padding:12px 10px;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-text-align:center;
-}
-
-.tab-btn span{
-display:block;
-font-size:12px;
-color:#555;
-font-weight:normal;
-margin-top:3px;
-}
-
-.tab-btn.active{
-background:#0b3c74;
-color:white;
-border-color:#0b3c74;
-}
-
-.tab-btn.active span{
-color:#e6eef8;
-}
-
-.search-box{
-display:flex;
-gap:10px;
-align-items:center;
-}
-
-.search-box input{
-width:100%;
-padding:13px;
-border:1px solid #ccc;
-border-radius:6px;
-font-size:15px;
-}
-
-.search-box button{
-padding:13px 18px;
-border:none;
-border-radius:6px;
-background:#25D366;
-color:white;
-font-weight:bold;
-cursor:pointer;
-white-space:nowrap;
-}
-
-.section{
-padding:28px 0 55px;
-}
-
-.notice{
-background:#eef5ff;
-padding:18px;
-border-left:5px solid #0b3c74;
-margin-bottom:22px;
-border-radius:5px;
-}
-
-.tab-panel{
-display:none;
-}
-
-.tab-panel.active{
-display:block;
-}
-
-.panel-title{
-display:flex;
-justify-content:space-between;
-align-items:end;
-gap:15px;
-margin-bottom:14px;
-}
-
-.panel-title h2{
-color:#0b3c74;
-margin:0;
-font-size:28px;
-}
-
-.panel-title p{
-margin:0;
-color:#666;
-}
-
-.table-wrap{
-overflow:auto;
-border:1px solid #d9dee7;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,.06);
-}
-
-.catalog-table{
-width:100%;
-border-collapse:collapse;
-min-width:900px;
-font-size:14px;
-}
-
-th,td{
-border-bottom:1px solid #e5e7eb;
-border-right:1px solid #edf0f4;
-padding:9px 10px;
-text-align:left;
-vertical-align:top;
-}
-
-th{
-background:#0b3c74;
-color:white;
-position:sticky;
-top:0;
-z-index:2;
-}
-
-tr:nth-child(even){
-background:#f8fafc;
-}
-
-tr:hover{
-background:#eef5ff;
-}
-
-.quote-btn{
-background:#25D366;
-color:white;
-padding:6px 10px;
-border-radius:4px;
-text-decoration:none;
-white-space:nowrap;
-display:inline-block;
-}
-
-footer{
-background:#0b3c74;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-@media(max-width:1200px){
-nav ul{
-gap:22px;
-}
-
-nav a{
-font-size:15px;
-}
-}
-
-@media(max-width:992px){
-.tab-row{
-grid-template-columns:1fr 1fr;
-}
-
-.controls{
-position:static;
-}
-
-nav{
-flex-direction:column;
-}
-
-.nav-right{
-flex-direction:column;
-gap:12px;
-margin-top:12px;
-}
-
-nav ul{
-gap:18px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.brand{
-flex-direction:column;
-text-align:center;
-}
-}
-
-@media(max-width:560px){
-.tab-row{
-grid-template-columns:1fr;
-}
-
-.search-box{
-flex-direction:column;
-}
-
-.search-box button{
-width:100%;
-}
-
-.banner h1{
-font-size:32px;
-}
-}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#2f3b48;line-height:1.6;background:#f5f7fb;}
+a{color:inherit;}
+.container{width:96%;max-width:1500px;margin:auto;}
+header{background:#0b3c74;color:white;padding:14px 0;position:sticky;top:0;z-index:999;box-shadow:0 4px 14px rgba(6,40,77,.16);}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;}
+.brand{display:flex;align-items:center;gap:12px;min-width:320px;}
+.brand img{width:52px;height:52px;object-fit:contain;background:white;border-radius:6px;padding:3px;}
+.company-name{font-size:17px;font-weight:bold;color:white;line-height:1.3;}
+.company-slogan{font-size:12px;opacity:.85;margin-top:3px;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+nav ul{display:flex;list-style:none;gap:28px;white-space:nowrap;align-items:center;margin:0;padding:0;}
+nav a{color:white;text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap;}
+.language-dropdown{position:relative;}
+.lang-btn{background:none;border:1px solid rgba(255,255,255,.4);color:white;padding:8px 12px;border-radius:5px;cursor:pointer;font-size:14px;white-space:nowrap;}
+.lang-menu{display:none;position:absolute;top:42px;right:0;background:white;min-width:160px;border-radius:6px;box-shadow:0 5px 15px rgba(0,0,0,.15);overflow:hidden;z-index:9999;}
+.lang-menu a{display:block;padding:12px 15px;color:#333;text-decoration:none;font-size:14px;}
+.lang-menu a:hover{background:#f5f7fa;}
+.language-dropdown:hover .lang-menu{display:block;}
+.product-hero{background:linear-gradient(rgba(9,45,84,.78),rgba(9,45,84,.72)),url('images/hero2.jpg') center/cover;min-height:310px;color:white;display:flex;align-items:center;}
+.product-hero .container{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:36px;align-items:center;padding:54px 0;}
+.hero-kicker{text-transform:uppercase;font-size:13px;letter-spacing:.08em;font-weight:bold;color:#8ee0a8;margin-bottom:10px;}
+.product-hero h1{font-size:46px;line-height:1.12;margin-bottom:18px;max-width:760px;}
+.product-hero p{font-size:17px;max-width:780px;color:#edf5ff;}
+.hero-panel{background:rgba(255,255,255,.94);color:#263341;border-radius:8px;padding:24px;box-shadow:0 18px 45px rgba(0,0,0,.24);}
+.hero-panel h2{font-size:22px;color:#0b3c74;margin-bottom:12px;}
+.hero-panel p{color:#4d5b68;font-size:15px;margin-bottom:16px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;background:#25D366;color:white;padding:10px 16px;text-decoration:none;border-radius:5px;font-weight:bold;border:0;cursor:pointer;}
+.btn-blue{background:#0b3c74;}
+.product-shell{padding:42px 0 64px;}
+.product-layout{display:grid;grid-template-columns:315px minmax(0,1fr);gap:28px;align-items:start;}
+.category-sidebar{position:sticky;top:96px;background:white;border:1px solid #dfe6ef;border-radius:8px;box-shadow:0 8px 24px rgba(11,60,116,.08);overflow:hidden;}
+.sidebar-title{background:#0b3c74;color:white;padding:16px 18px;font-size:18px;font-weight:bold;}
+.category-list{padding:10px;}
+.category-group{border-bottom:1px solid #edf1f6;padding:8px 0;}
+.category-group:last-child{border-bottom:0;}
+.category-btn{width:100%;border:0;background:white;color:#0b3c74;text-align:left;padding:10px 8px;border-radius:5px;font-size:15px;font-weight:bold;cursor:pointer;display:flex;justify-content:space-between;gap:10px;}
+.category-btn:hover,.category-btn.active{background:#eef5ff;}
+.category-btn.active{box-shadow:inset 3px 0 0 #25D366;}
+.subcategory-list{list-style:none;margin:3px 0 0 0;padding:0 0 0 12px;}
+.subcategory-list button{width:100%;border:0;background:transparent;text-align:left;color:#536170;padding:6px 8px;border-radius:4px;cursor:pointer;font-size:14px;}
+.subcategory-list button:hover{background:#f4f7fb;color:#0b3c74;}
+.product-main{min-width:0;}
+.search-card{background:white;border:1px solid #dfe6ef;border-radius:8px;padding:18px;margin-bottom:18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;}
+.search-box{display:flex;gap:10px;align-items:center;}
+.search-box input{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:5px;font-size:15px;}
+.search-box button{padding:13px 18px;border:none;border-radius:5px;background:#25D366;color:white;font-weight:bold;cursor:pointer;white-space:nowrap;}
+.notice{background:#eef5ff;padding:16px 18px;border-left:5px solid #0b3c74;margin-bottom:18px;border-radius:5px;color:#405064;}
+.tab-panel{display:none;background:white;border:1px solid #dfe6ef;border-radius:8px;padding:22px;box-shadow:0 8px 24px rgba(11,60,116,.07);}
+.tab-panel.active{display:block;}
+.panel-title{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:14px;border-bottom:1px solid #e8edf4;padding-bottom:14px;}
+.panel-title h2{color:#0b3c74;margin:0;font-size:30px;line-height:1.2;}
+.panel-title p{margin:0;color:#66788a;white-space:nowrap;}
+.category-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0 22px;}
+.summary-card{border:1px solid #e1e8f0;background:#f8fafc;border-radius:7px;padding:14px;min-height:96px;}
+.summary-card h3{font-size:16px;color:#0b3c74;margin-bottom:7px;}
+.summary-card p{font-size:14px;color:#5a6978;}
+.table-wrap{overflow:auto;border:1px solid #d9dee7;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.catalog-table{width:100%;border-collapse:collapse;min-width:900px;font-size:14px;background:white;}
+th,td{border-bottom:1px solid #e5e7eb;border-right:1px solid #edf0f4;padding:9px 10px;text-align:left;vertical-align:top;}
+th{background:#0b3c74;color:white;position:sticky;top:0;z-index:2;}
+tr:nth-child(even){background:#f8fafc;}
+tr:hover{background:#eef5ff;}
+.quote-btn{background:#25D366;color:white;padding:6px 10px;border-radius:4px;text-decoration:none;white-space:nowrap;display:inline-block;font-weight:bold;}
+.inquiry-panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px;}
+.inquiry-card{border:1px solid #e1e8f0;border-radius:7px;padding:18px;background:#f8fafc;}
+.inquiry-card h3{color:#0b3c74;font-size:17px;margin-bottom:8px;}
+.inquiry-card p{color:#5a6978;font-size:14px;}
+footer{background:#0b3c74;color:white;text-align:center;padding:25px;margin-top:40px;}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;width:60px;height:60px;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;text-decoration:none;box-shadow:0 5px 10px rgba(0,0,0,.3);z-index:9999;font-weight:bold;}
+@media(max-width:1200px){nav ul{gap:18px;}nav a{font-size:14px;}.product-layout{grid-template-columns:280px minmax(0,1fr);}}
+@media(max-width:992px){nav{flex-direction:column;}.nav-right{flex-direction:column;gap:12px;margin-top:12px;}nav ul{gap:18px;flex-wrap:wrap;justify-content:center;}.brand{flex-direction:column;text-align:center;min-width:0;}.product-hero .container{grid-template-columns:1fr;}.product-layout{grid-template-columns:1fr;}.category-sidebar{position:static;}.search-card{grid-template-columns:1fr;}.product-hero h1{font-size:36px;}}
+@media(max-width:560px){.search-box{flex-direction:column;}.search-box button{width:100%;}.product-hero h1{font-size:31px;}.tab-panel{padding:16px;}.panel-title{align-items:start;flex-direction:column;}.panel-title p{white-space:normal;}.catalog-table{min-width:720px;}.category-summary{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 <header>
 <div class="container">
 <nav>
-
 <div class="brand">
 <img src="images/logo.png" alt="Hebei Yaoxiao Logo">
 <div>
@@ -394,42 +98,71 @@ font-size:32px;
 <div class="company-slogan">Specialty Chemicals Supplier From China</div>
 </div>
 </div>
-
 <div class="nav-right">
-
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="products.html">Products & Catalog</a></li>
 <li><a href="top-products.html">Top Products</a></li>
 <li><a href="facilities.html">Company Strength</a></li>
+<li><a href="certificates.html">Certificates</a></li>
+<li><a href="faq.html">FAQ</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
-
 <div class="language-dropdown">
-<button class="lang-btn">🌐 Language ▼</button>
+<button class="lang-btn" type="button" aria-label="Select language">Language</button>
 <div class="lang-menu">
 <a href="index.html">English</a>
-<a href="zh/index.html">中文</a>
-<a href="ru/index.html">Русский</a>
-<a href="es/index.html">Español</a>
+<a href="zh/index.html">Chinese</a>
+<a href="ru/index.html">Russian</a>
+<a href="es/index.html">Spanish</a>
 </div>
 </div>
-
 </div>
-
 </nav>
 </div>
 </header>
-<section class="banner">
-<h1>Products & Catalog</h1>
-<p>Select a primary chemical category below. The detailed product list appears on this page like an Excel worksheet. All rows include English product name, CAS number, category and inquiry link.</p>
+<section class="product-hero">
+<div class="container">
+<div>
+<div class="hero-kicker">Product Center</div>
+<h1>Chemical Categories & Product Catalog</h1>
+<p>Explore Hebei Yaoxiao product categories for pharmaceutical intermediates, agrochemical intermediates, fine chemicals, new energy materials, industrial chemicals, water treatment chemicals and cosmetic ingredients.</p>
+</div>
+<div class="hero-panel">
+<h2>Fast Product Matching</h2>
+<p>Send product name, CAS number, purity, quantity and destination country. Our team will match suitable supply options and provide quotation support.</p>
+<div class="hero-actions">
+<a class="btn" href="contact.html">Send Inquiry</a>
+<a class="btn btn-blue" href="top-products.html">Top Products</a>
+</div>
+</div>
+</div>
 </section>
-<div class="controls"><div class="container"><div class="tab-row"><button class="tab-btn active" onclick="showTab('pharma', this)">Pharmaceutical Intermediates<span>1090 products</span></button><button class="tab-btn" onclick="showTab('agro', this)">Agrochemical Intermediates<span>135 products</span></button><button class="tab-btn" onclick="showTab('industrial', this)">Industrial Chemicals<span>2286 products</span></button><button class="tab-btn" onclick="showTab('fine', this)">Fine Chemicals<span>368 products</span></button><button class="tab-btn" onclick="showTab('other', this)">Other Chemicals<span>118 products</span></button></div><div class="search-box"><input type="text" id="searchInput" placeholder="Search current category by English product name, CAS number or category..."><button onclick="clearSearch()">Clear</button></div></div></div>
-<section class="section"><div class="container"><div class="notice"><strong>Inquiry Tips:</strong> Please send product name, CAS number, purity, quantity and destination country for faster quotation. Email: peter@yaoxiaochem.com</div>
-
+<section class="product-shell">
+<div class="container">
+<div class="product-layout">
+<aside class="category-sidebar" aria-label="Product categories">
+<div class="sidebar-title">Product Categories</div>
+<div class="category-list">
+<div class="category-group"><button class="category-btn active" type="button" data-tab="pharma">Pharmaceutical Intermediates</button><ul class="subcategory-list"><li><button type="button" data-tab="pharma" data-search="pyridine">Pyridine Series</button></li><li><button type="button" data-tab="pharma" data-search="pyrimidine">Pyrimidine Series</button></li><li><button type="button" data-tab="pharma" data-search="imidazole">Imidazole Series</button></li><li><button type="button" data-tab="pharma" data-search="amino acid">Amino Acid Derivatives</button></li><li><button type="button" data-tab="pharma" data-search="api">API Intermediates</button></li></ul></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="agro">Agrochemical Intermediates</button><ul class="subcategory-list"><li><button type="button" data-tab="agro" data-search="chloropyridine">Chloropyridines</button></li><li><button type="button" data-tab="agro" data-search="pyrazole">Pyrazoles</button></li><li><button type="button" data-tab="agro" data-search="pyrimidine">Pyrimidines</button></li><li><button type="button" data-tab="agro" data-search="crop protection">Crop Protection Intermediates</button></li></ul></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="fine">Fine Chemicals</button><ul class="subcategory-list"><li><button type="button" data-tab="fine" data-search="quinoline">Quinoline Series</button></li><li><button type="button" data-tab="fine" data-search="heterocyclic">Heterocyclic Compounds</button></li><li><button type="button" data-tab="fine" data-search="specialty">Specialty Intermediates</button></li><li><button type="button" data-tab="fine" data-search="custom">Custom Synthesis</button></li></ul></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="new-energy">New Energy & Electronic Materials</button><ul class="subcategory-list"><li><button type="button" data-tab="new-energy" data-search="electronic">Electronic Chemicals</button></li><li><button type="button" data-tab="new-energy" data-search="battery">Battery Materials</button></li><li><button type="button" data-tab="new-energy" data-search="polymer">Engineering Polymers</button></li></ul></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="industrial">Industrial Chemicals</button><ul class="subcategory-list"><li><button type="button" data-tab="industrial" data-search="solvent">Solvents</button></li><li><button type="button" data-tab="industrial" data-search="acid">Organic Acids</button></li><li><button type="button" data-tab="industrial" data-search="salt">Inorganic Salts</button></li><li><button type="button" data-tab="industrial" data-search="oxide">Oxides</button></li></ul></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="water-treatment">Water Treatment Chemicals</button></div>
+<div class="category-group"><button class="category-btn" type="button" data-tab="cosmetic">Cosmetic Ingredients</button></div>
+</div>
+</aside>
+<main class="product-main">
+<div class="search-card">
+<div class="search-box"><input type="text" id="searchInput" placeholder="Search current category by product name, CAS number or subcategory..."><button type="button" onclick="clearSearch()">Clear</button></div>
+<a class="btn btn-blue" href="contact.html">Request Quote</a>
+</div>
+<div class="notice"><strong>Inquiry Tips:</strong> For faster quotation, please include product name, CAS number, purity, quantity, package requirement and destination country.</div>
 <section class="tab-panel active" id="pharma">
 <div class="panel-title"><h2>Pharmaceutical Intermediates</h2><p>1090 products</p></div>
+<div class="category-summary"><div class="summary-card"><h3>Pyridine Series</h3><p>Pyridine derivatives and related heterocyclic intermediates.</p></div><div class="summary-card"><h3>Pyrimidine Series</h3><p>Pyrimidine building blocks for pharmaceutical synthesis.</p></div><div class="summary-card"><h3>Imidazole Series</h3><p>Imidazole compounds and functionalized intermediates.</p></div><div class="summary-card"><h3>Amino Acid Derivatives</h3><p>Amino acid related intermediates and protected derivatives.</p></div><div class="summary-card"><h3>API Intermediates</h3><p>Intermediate products for API-related synthesis routes.</p></div></div>
 <div class="table-wrap"><table class="catalog-table"><thead><tr>
 <th>Product Name</th><th>CAS No.</th><th>Category</th><th>Inquiry</th>
 </tr></thead><tbody>
@@ -1527,6 +1260,7 @@ font-size:32px;
 </section>
 <section class="tab-panel" id="agro">
 <div class="panel-title"><h2>Agrochemical Intermediates</h2><p>135 products</p></div>
+<div class="category-summary"><div class="summary-card"><h3>Chloropyridines</h3><p>Chlorinated pyridine intermediates for agrochemical applications.</p></div><div class="summary-card"><h3>Pyrazoles</h3><p>Pyrazole intermediates used in crop protection chemistry.</p></div><div class="summary-card"><h3>Pyrimidines</h3><p>Pyrimidine derivatives for agrochemical active ingredient synthesis.</p></div><div class="summary-card"><h3>Crop Protection Intermediates</h3><p>Intermediates for fungicides, herbicides and insecticides.</p></div></div>
 <div class="table-wrap"><table class="catalog-table"><thead><tr>
 <th>Product Name</th><th>CAS No.</th><th>Category</th><th>Inquiry</th>
 </tr></thead><tbody>
@@ -1667,8 +1401,19 @@ font-size:32px;
 <tr><td>Wintergreen oil</td><td>119-36-8</td><td>Agrochemical Intermediates</td><td><a class="quote-btn" href="contact.html">Request Quote</a></td></tr>
 </tbody></table></div>
 </section>
+<section class="tab-panel" id="new-energy">
+<div class="panel-title"><h2>New Energy & Electronic Materials</h2><p>Electronic chemicals, battery materials and engineering polymers</p></div>
+<div class="category-summary">
+<div class="summary-card"><h3>Electronic Chemicals</h3><p>Specialty chemicals for electronics-related manufacturing and processing.</p></div>
+<div class="summary-card"><h3>Battery Materials</h3><p>Battery material intermediates and sourcing support for new energy applications.</p></div>
+<div class="summary-card"><h3>Engineering Polymers</h3><p>Polymer-related materials and specialty intermediates for industrial use.</p></div>
+</div>
+<div class="inquiry-panel"><div class="inquiry-card"><h3>Custom Sourcing</h3><p>Please send your target specification, purity and application. We will confirm availability and technical document support.</p></div><div class="inquiry-card"><h3>Document Support</h3><p>COA, TDS, SDS/MSDS and export document support can be arranged according to product requirements.</p></div></div>
+<p style="margin-top:18px;"><a class="btn" href="contact.html">Send New Energy Inquiry</a></p>
+</section>
 <section class="tab-panel" id="industrial">
 <div class="panel-title"><h2>Industrial Chemicals</h2><p>2286 products</p></div>
+<div class="category-summary"><div class="summary-card"><h3>Solvents</h3><p>Organic solvents and auxiliary materials for industrial use.</p></div><div class="summary-card"><h3>Organic Acids</h3><p>Organic acid products and related intermediates.</p></div><div class="summary-card"><h3>Inorganic Salts</h3><p>Inorganic salts for manufacturing and processing.</p></div><div class="summary-card"><h3>Oxides</h3><p>Oxide products and raw materials for industrial applications.</p></div></div>
 <div class="table-wrap"><table class="catalog-table"><thead><tr>
 <th>Product Name</th><th>CAS No.</th><th>Category</th><th>Inquiry</th>
 </tr></thead><tbody>
@@ -3962,6 +3707,7 @@ font-size:32px;
 </section>
 <section class="tab-panel" id="fine">
 <div class="panel-title"><h2>Fine Chemicals</h2><p>368 products</p></div>
+<div class="category-summary"><div class="summary-card"><h3>Quinoline Series</h3><p>Quinoline and substituted quinoline specialty compounds.</p></div><div class="summary-card"><h3>Heterocyclic Compounds</h3><p>Heterocyclic building blocks for fine chemical applications.</p></div><div class="summary-card"><h3>Specialty Intermediates</h3><p>Specialty products for targeted industrial synthesis.</p></div><div class="summary-card"><h3>Custom Synthesis</h3><p>Custom sourcing and matching according to target molecule.</p></div></div>
 <div class="table-wrap"><table class="catalog-table"><thead><tr>
 <th>Product Name</th><th>CAS No.</th><th>Category</th><th>Inquiry</th>
 </tr></thead><tbody>
@@ -4335,8 +4081,9 @@ font-size:32px;
 <tr><td>（2-bromo-5-iodophenyl）methanol</td><td>946525-30-0</td><td>Fine Chemicals</td><td><a class="quote-btn" href="contact.html">Request Quote</a></td></tr>
 </tbody></table></div>
 </section>
-<section class="tab-panel" id="other">
-<div class="panel-title"><h2>Other Chemicals</h2><p>118 products</p></div>
+<section class="tab-panel" id="water-treatment">
+<div class="panel-title"><h2>Water Treatment Chemicals</h2><p>Water treatment and auxiliary chemical products</p></div>
+<div class="category-summary"><div class="summary-card"><h3>Coagulants</h3><p>Water treatment coagulants and related inorganic chemicals.</p></div><div class="summary-card"><h3>pH Adjustment</h3><p>Acids, alkalis and salts for water process control.</p></div><div class="summary-card"><h3>Disinfection Support</h3><p>Oxidizing and disinfectant-related chemical sourcing support.</p></div></div>
 <div class="table-wrap"><table class="catalog-table"><thead><tr>
 <th>Product Name</th><th>CAS No.</th><th>Category</th><th>Inquiry</th>
 </tr></thead><tbody>
@@ -4460,51 +4207,60 @@ font-size:32px;
 <tr><td>γ-Aminobutyric acid</td><td>56-12-2</td><td>Other Chemicals</td><td><a class="quote-btn" href="contact.html">Request Quote</a></td></tr>
 </tbody></table></div>
 </section>
-</div></section>
+<section class="tab-panel" id="cosmetic">
+<div class="panel-title"><h2>Cosmetic Ingredients</h2><p>Functional ingredients and custom sourcing</p></div>
+<div class="category-summary">
+<div class="summary-card"><h3>Vitamins & Derivatives</h3><p>Ingredient sourcing support for vitamins, derivatives and related cosmetic materials.</p></div>
+<div class="summary-card"><h3>Functional Ingredients</h3><p>Support for whitening, moisturizing, antioxidant and formulation-related ingredients.</p></div>
+<div class="summary-card"><h3>Custom Matching</h3><p>Send INCI name, CAS number, grade and target market for quick product matching.</p></div>
+</div>
+<div class="inquiry-panel"><div class="inquiry-card"><h3>Inquiry Information</h3><p>Please include grade, purity, package size, quantity and destination country.</p></div><div class="inquiry-card"><h3>Regulatory Documents</h3><p>COA, SDS/MSDS and specification documents can be provided according to product availability.</p></div></div>
+<p style="margin-top:18px;"><a class="btn" href="contact.html">Send Cosmetic Ingredient Inquiry</a></p>
+</section>
+</main>
+</div>
+</div>
+</section>
 <footer>
-<p>© 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
-<p>Pharmaceutical Intermediates · Agrochemical Intermediates · Industrial Chemicals · Fine Chemicals</p>
+<p>&copy; 2026 Hebei Yaoxiao New Materials Technology Co., Ltd.</p>
+<p>Pharmaceutical Intermediates | Agrochemical Intermediates | Industrial Chemicals | Fine Chemicals</p>
 <p>Email: peter@yaoxiaochem.com | Website: www.yaoxiaochem.com</p>
 </footer>
 <script>
 let activeTab = 'pharma';
-function showTab(id, btn) {
+function setActiveButton(id) {
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === id);
+  });
+}
+function showTab(id, keyword = '') {
   activeTab = id;
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('searchInput').value = '';
-  filterRows('');
+  document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+  const target = document.getElementById(id);
+  if (target) target.classList.add('active');
+  setActiveButton(id);
+  const input = document.getElementById('searchInput');
+  input.value = keyword;
+  filterRows(keyword);
+  if (window.innerWidth < 993 && target) target.scrollIntoView({behavior:'smooth', block:'start'});
 }
 function filterRows(keyword) {
   const panel = document.getElementById(activeTab);
-  const rows = panel.querySelectorAll('tbody tr');
-  const k = keyword.toLowerCase();
-  rows.forEach(row => {row.style.display = row.innerText.toLowerCase().includes(k) ? '' : 'none';});
+  if (!panel) return;
+  const k = keyword.toLowerCase().trim();
+  panel.querySelectorAll('tbody tr').forEach(row => {
+    row.style.display = row.innerText.toLowerCase().includes(k) ? '' : 'none';
+  });
+  panel.querySelectorAll('.summary-card, .inquiry-card').forEach(card => {
+    card.style.display = !k || card.innerText.toLowerCase().includes(k) ? '' : 'none';
+  });
 }
+document.querySelectorAll('[data-tab]').forEach(el => {
+  el.addEventListener('click', () => showTab(el.dataset.tab, el.dataset.search || ''));
+});
 document.getElementById('searchInput').addEventListener('keyup', function(){filterRows(this.value);});
 function clearSearch() {document.getElementById('searchInput').value = ''; filterRows('');}
 </script>
-<a href="https://wa.me/8615832440987"
-style="
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-background:#25D366;
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-text-decoration:none;
-box-shadow:0 5px 10px rgba(0,0,0,.3);
-z-index:9999;">
-💬
-</a>
-
+<a class="whatsapp-float" href="https://wa.me/8615832440987" aria-label="Contact Hebei Yaoxiao on WhatsApp" title="Contact on WhatsApp">WA</a>
 </body>
 </html>

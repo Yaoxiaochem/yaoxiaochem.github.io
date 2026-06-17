@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Global export market routes from China</title>
+  <desc id="desc">Blue world map with export routes from China and labeled destination countries.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9fcff"/>
+      <stop offset="1" stop-color="#e9f5ff"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bfe1fb"/>
+      <stop offset="1" stop-color="#68aee8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6aa7d8" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .grid{fill:none;stroke:#d7e8f5;stroke-width:1.1}
+      .land{fill:url(#land);stroke:#ffffff;stroke-width:2.2;stroke-linejoin:round;filter:url(#softShadow)}
+      .country-line{fill:none;stroke:#75a9cf;stroke-width:1;opacity:.52}
+      .route{fill:none;stroke:#c9896d;stroke-width:1.1;opacity:.72}
+      .marker{fill:#fff;stroke:#c62828;stroke-width:2}
+      .china{fill:#0b3c74;stroke:#fff;stroke-width:2}
+      .label{font:700 13px Arial,Helvetica,sans-serif;fill:#15385c;paint-order:stroke;stroke:#fff;stroke-width:4;stroke-linejoin:round}
+      .china-label{font:700 13px Arial,Helvetica,sans-serif;fill:#fff}
+    </style>
+  </defs>
+  <rect width="1000" height="520" rx="16" fill="url(#sea)"/>
+  <path class="grid" d="M0 130h1000M0 260h1000M0 390h1000M125 0v520M250 0v520M375 0v520M500 0v520M625 0v520M750 0v520M875 0v520"/>
+  <g>
+    <path class="land" d="M60 110 110 66 220 52 315 105 288 190 205 218 122 192 46 150Z"/>
+    <path class="land" d="M86 170 155 154 196 218 138 204Z" opacity=".82"/>
+    <path class="land" d="M168 232 224 240 236 278 196 295 154 270Z"/>
+    <path class="land" d="M284 265 344 294 372 363 342 438 300 488 258 435 268 352 240 310Z"/>
+    <path class="land" d="M426 118 496 86 574 112 610 164 552 196 474 188 388 150Z"/>
+    <path class="land" d="M476 206 558 188 636 230 666 316 612 430 520 420 474 338 430 272Z"/>
+    <path class="land" d="M580 112 706 64 852 82 960 150 916 220 764 208 662 178 585 156Z"/>
+    <path class="land" d="M672 215 734 204 800 250 820 318 754 350 694 306Z"/>
+    <path class="land" d="M758 352 850 336 940 388 900 465 792 448Z"/>
+  </g>
+  <g class="country-lines">
+    <path class="country-line" d="M110 66 205 218M220 52 205 218M315 105 205 218M284 265 342 438M344 294 258 435M496 86 552 196M574 112 474 188M558 188 520 420M636 230 474 338M706 64 764 208M852 82 764 208M734 204 694 306M800 250 754 350M850 336 792 448"/>
+  </g>
+  <g class="routes">
+    <path class="route" d="M760 234 190 198"/><path class="route" d="M760 234 180 125"/>
+    <path class="route" d="M760 234 170 250"/><path class="route" d="M760 234 320 354"/>
+    <path class="route" d="M760 234 490 172"/><path class="route" d="M760 234 520 161"/>
+    <path class="route" d="M760 234 560 166"/><path class="route" d="M760 234 670 125"/>
+    <path class="route" d="M760 234 560 213"/><path class="route" d="M760 234 620 224"/>
+    <path class="route" d="M760 234 530 239"/><path class="route" d="M760 234 470 296"/>
+    <path class="route" d="M760 234 570 317"/><path class="route" d="M760 234 550 406"/>
+    <path class="route" d="M760 234 670 260"/><path class="route" d="M760 234 640 250"/>
+    <path class="route" d="M760 234 760 286"/><path class="route" d="M760 234 760 322"/>
+    <path class="route" d="M760 234 810 296"/><path class="route" d="M760 234 840 208"/>
+    <path class="route" d="M760 234 800 213"/><path class="route" d="M760 234 800 395"/>
+    <path class="route" d="M760 234 620 192"/>
+  </g>
+  <g class="points">
+    <circle class="marker" cx="190" cy="198" r="5"/><text class="label" x="110" y="190">United States</text>
+    <circle class="marker" cx="180" cy="125" r="5"/><text class="label" x="126" y="110">Canada</text>
+    <circle class="marker" cx="170" cy="250" r="5"/><text class="label" x="108" y="263">Mexico</text>
+    <circle class="marker" cx="320" cy="354" r="5"/><text class="label" x="332" y="358">Brazil</text>
+    <circle class="marker" cx="490" cy="172" r="5"/><text class="label" x="432" y="166">Germany</text>
+    <circle class="marker" cx="520" cy="161" r="5"/><text class="label" x="526" y="150">Poland</text>
+    <circle class="marker" cx="560" cy="166" r="5"/><text class="label" x="566" y="172">Ukraine</text>
+    <circle class="marker" cx="670" cy="125" r="5"/><text class="label" x="638" y="110">Russia</text>
+    <circle class="marker" cx="560" cy="213" r="5"/><text class="label" x="500" y="222">Turkey</text>
+    <circle class="marker" cx="620" cy="224" r="5"/><text class="label" x="626" y="218">Iran</text>
+    <circle class="marker" cx="530" cy="239" r="5"/><text class="label" x="474" y="248">Egypt</text>
+    <circle class="marker" cx="470" cy="296" r="5"/><text class="label" x="412" y="305">Ghana</text>
+    <circle class="marker" cx="570" cy="317" r="5"/><text class="label" x="582" y="323">Kenya</text>
+    <circle class="marker" cx="550" cy="406" r="5"/><text class="label" x="560" y="412">South Africa</text>
+    <circle class="marker" cx="670" cy="260" r="5"/><text class="label" x="680" y="264">India</text>
+    <circle class="marker" cx="640" cy="250" r="5"/><text class="label" x="586" y="264">Pakistan</text>
+    <circle class="marker" cx="760" cy="286" r="5"/><text class="label" x="770" y="290">Vietnam</text>
+    <circle class="marker" cx="760" cy="322" r="5"/><text class="label" x="770" y="326">Malaysia</text>
+    <circle class="marker" cx="810" cy="296" r="5"/><text class="label" x="820" y="302">Philippines</text>
+    <circle class="marker" cx="840" cy="208" r="5"/><text class="label" x="850" y="204">Japan</text>
+    <circle class="marker" cx="800" cy="213" r="5"/><text class="label" x="810" y="226">South Korea</text>
+    <circle class="marker" cx="800" cy="395" r="5"/><text class="label" x="812" y="402">Australia</text>
+    <circle class="marker" cx="620" cy="192" r="5"/><text class="label" x="628" y="190">Uzbekistan</text>
+    <circle class="china" cx="760" cy="234" r="7"/><rect x="775" y="222" width="48" height="23" rx="4" fill="#0b3c74"/><text class="china-label" x="784" y="238">China</text>
+  </g>
+</svg>

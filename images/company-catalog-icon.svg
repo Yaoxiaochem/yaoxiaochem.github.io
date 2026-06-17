@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Company catalog">
+  <path d="M9 18h18l5 6h23v29H9V18z" fill="#25d366"/>
+  <path d="M9 25h46v28H9V25z" fill="#eaf7ef"/>
+  <path d="M18 49V30h28v19" fill="#0b3c74"/>
+  <path d="M23 49V35h18v14" fill="#fff"/>
+  <path d="M26 40h4M34 40h4M26 45h4M34 45h4" stroke="#0b3c74" stroke-width="2" stroke-linecap="round"/>
+</svg>
